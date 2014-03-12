@@ -1,0 +1,288 @@
+<center>
+   <h1><%= I18n.t("understanding_the_system.index.title") %></h1>
+</center>
+<p class="more-info"><%= I18n.t("general.updated_at", :date => "07/11/2013") %></p>
+<h3><%= I18n.t("general.index") %></h3>
+<!--Indice -->
+<div class="metro-surface">
+   <center>
+      <table>
+         <tr>
+            <td>
+               <a href="#welcome_inner">
+                  <div class="metro-tile  "><%= I18n.t("understanding_the_system.index.table_of_contents.welcome") %></div>
+               </a>
+            </td>
+            <td>
+               <a href="#">
+                  <div class="metro-tile metro-tile-small"></div>
+               </a>
+            </td>
+            <td>
+               <a href="#flow_inner">
+                  <div class="metro-tile"><%= I18n.t("understanding_the_system.index.table_of_contents.flow") %></div>
+               </a>
+            </td>
+            <td>
+               <a href="#">
+                  <div class="metro-tile metro-tile-small"></div>
+               </a>
+            </td>
+            <td>
+               <a href="#">
+                  <div class="metro-tile metro-tile-small"></div>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <table>
+         <tr>
+            <td>
+               <a href="#1_inner">
+                  <div class="metro-tile metro-tile-small">1º Preparação</div>
+               </a>
+            </td>
+            <td>
+               <a href="#2_inner">
+                  <div class="metro-tile metro-tile-small">2º Envio</div>
+               </a>
+            </td>
+            <td>
+               <a href="#3_inner">
+                  <div class="metro-tile metro-tile-small">3º Análise</div>
+               </a>
+            </td>
+            <td>
+               <a href="#4_inner">
+                  <div class="metro-tile ">4º Inconsistências</div>
+               </a>
+            </td>
+            <td>
+               <a href="#5_inner">
+                  <div class="metro-tile ">5º Validado</div>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </center>
+</div>
+<!--Bem Vindo -->
+<div id ="welcome" > &nbsp </div>
+<center>
+   <h2 id="welcome_inner"><%= I18n.t("understanding_the_system.index.table_of_contents.welcome") %></h2>
+</center>
+<div class="row-fluid">
+   <p style="text-indent: 3em; text-align: justify;"><%= I18n.t("understanding_the_system.index.welcome.item_1") %></p>
+</div>
+<!--Fluxograma -->
+<div id ="flow" > &nbsp </div>
+<h2 id="flow_inner"><%= I18n.t("understanding_the_system.index.table_of_contents.flow") %></h2>
+<div class="row-fluid">
+   </br>
+   </br>
+   <table width="100%">
+      <tr>
+         <td width="5%">
+            <div class="circle one-line">1</div>
+         </td>
+         <td width="70%" id="1_inner">
+            <p style="text-indent: 3em;text-align: justify;font-size: 16px;font-weight: bold;"><%= I18n.t("understanding_the_system.index.flow.item_1") %></p>
+         </td>
+      </tr>
+   </table>
+   </br>
+   </br>
+   <table width="100%">
+      <tr>
+         <td width="25%">
+            <center>
+            <img  src="/img/understanding_the_system/hospital.png" height="150" width="150" />
+            <center/>
+         </td>
+         <td width="10%">
+            <center>
+            <img  src="/img/understanding_the_system/arrow_sans_right.png"/>
+            <center/>
+         </td>
+         <td width="25%">
+            <center>
+            <img  src="/img/understanding_the_system/xmlfiles.png"  height="200" width="200"style="margin-left:15px;"/>
+            <center/>
+         </td>
+         <td width="10%">
+            <center>
+            <img  src="/img/understanding_the_system/arrow_sans_right.png" style="margin-left:40px;"/>
+            <center/>
+         </td>
+         <td width="25%">
+            <center>
+            <img  src="/img/understanding_the_system/zipfiles.png"  height="80" width="80"/>
+            <center/>
+         </td>
+      </tr>
+   </table>
+   </br>
+   </br>
+   </br>
+   </br>
+   <table width="100%">
+      <tr>
+         <td width="5%">
+            <div class="circle one-line">2</div>
+         </td>
+         <td width="70%" id="2_inner">
+            <p style="text-indent: 3em; font-size: 16px;font-weight: bold;"> <%= I18n.t("understanding_the_system.index.flow.item_2") %></p>
+         </td>
+      </tr>
+   </table>
+   </br>
+   </br>
+   </br>
+   </br>
+   <table width="100%">
+      <tr>
+         <td width="35%">
+            <center>
+            <img  src="/img/understanding_the_system/zipfiles.png"  height="80" width="80"/>
+            <center/>
+         </td>
+         <td width="10%">
+            <center>
+            <img  src="/img/understanding_the_system/arrow_sans_right.png" style="margin-left:40px;"/>
+            <center/>
+         </td>
+         <td width="35%">
+            <center>
+            <img  src="/img/understanding_the_system/logo1.png" />
+            <center/>
+         </td>
+      </tr>
+   </table>
+   </br>
+   </br>
+   </br>
+   </br>
+   </br>
+   </br>
+   <table width="100%">
+      <tr>
+         <td width="5%">
+            <div class="circle one-line">3</div>
+         </td>
+         <td width="70%" id="3_inner">
+            <p style="text-indent: 3em; text-align: justify;font-size: 16px;font-weight: bold;"> <%= I18n.t("understanding_the_system.index.flow.item_3") %></p>
+         </td>
+      </tr>
+   </table>
+   </br>
+   </br>	
+   <table width="100%">
+      <tr>
+         <td width="35%">
+            <center>
+            <img  src="/img/understanding_the_system/logo1.png"  />
+            <center/>
+         </td>
+         <td width="10%">
+            <center>
+            <img  src="/img/understanding_the_system/arrow_sans_right.png" style="margin-left:40px;"/>
+            <center/>
+         </td>
+         <td width="35%">
+            <center>
+            <img  src="/img/understanding_the_system/xtissvalitation.png" height="100" width="100" />
+            <center/>
+         </td>
+      </tr>
+   </table>
+   </br>
+   </br>
+   </br>
+   </br>
+   </br>
+   </br>
+   <table width="100%">
+      <tr>
+         <td width="5%">
+            <div class="circle one-line">4</div>
+         </td>
+         <td width="70%" id="4_inner">
+            <p style="text-indent: 3em; text-align: justify;font-size: 16px;font-weight: bold;"> <%= I18n.t("understanding_the_system.index.flow.item_4") %></p>
+         </td>
+      </tr>
+   </table>
+   </br>
+   </br>	
+   <table width="100%">
+      <tr>
+         <td width="25%">
+            <center>
+            <img  src="/img/understanding_the_system/xtissreject.png" height="70" width="70" />
+            <center/>
+         </td>
+         <td width="10%">
+            <center>
+            <img  src="/img/understanding_the_system/arrow_sans_right.png"/>
+            <center/>
+         </td>
+         <td width="25%">
+            <center>
+            <img  src="/img/understanding_the_system/logs.png"  height="480" width="480"style="margin-left:15px;"/>
+            <center/>
+         </td>
+         <td width="10%">
+            <center>
+            <img  src="/img/understanding_the_system/arrow_sans_right.png" style="margin-left:40px;"/>
+            <center/>
+         </td>
+         <td width="25%">
+            <center>
+            <img  src="/img/understanding_the_system/hospital.png"  height="150" width="150"/>
+            <center/>
+         </td>
+      </tr>
+   </table>
+   </br>
+   </br>
+   </br>
+   </br>
+   </br>
+   </br>
+   <table width="100%">
+      <tr>
+         <td width="5%">
+            <div class="circle one-line">5</div>
+         </td>
+         <td width="70%" id="5_inner">
+            <p style="text-indent: 3em; text-align: justify;font-size: 16px;font-weight: bold;"> <%= I18n.t("understanding_the_system.index.flow.item_5") %></p>
+         </td>
+      </tr>
+   </table>
+   </br>
+   </br>	
+   <table width="100%">
+      <tr>
+         <td width="25%">
+            <center>
+            <img  src="/img/understanding_the_system/validated.png"  height="100" width="100"style="margin-left:15px;"/>
+            <center/>
+         </td>
+         <td width="10%">
+            <center>
+            <img  src="/img/understanding_the_system/arrow_sans_right.png" style="margin-left:40px;"/>
+            <center/>
+         </td>
+         <td width="25%">
+            <center>
+            <img  src="/img/understanding_the_system/download.png"  height="150" width="150"/>
+            <center/>
+         </td>
+      </tr>
+   </table>
+</div>
+</br></br></br></br>
+<!--Botões -->
+<ul class="pager">
+   <li class="previous"><%= link_to("&larr; " + I18n.t("xtiss.index.title"), "xTiss") %></li>
+   <li class="next"><%= link_to(I18n.t("menu_main.index.title")+ " &rarr;", "menu_main") %></li>
+</ul>

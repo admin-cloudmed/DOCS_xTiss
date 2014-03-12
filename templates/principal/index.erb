@@ -1,0 +1,42 @@
+<center>
+   <h1><%= I18n.t("principal.index.title") %></h1>
+</center>
+<p class="more-info"><%= I18n.t("general.updated_at", :date => "07/11/2013") %></p>
+<h3><%= I18n.t("general.index") %></h3>
+
+
+<!--Indice -->
+<div class="metro-surface">
+   <center>
+      <table>
+         <tr>
+            <td>
+               <a href="#principal_inner">
+                  <div class="metro-tile "><%= I18n.t("principal.index.table_of_contents.principal") %></div>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </center>
+</div>
+
+
+<!-- Principal -->
+<div id ="principal" > &nbsp </div>
+<h2 id="principal_inner"><%= I18n.t("principal.index.table_of_contents.principal") %></h2>
+<div class="row-fluid">
+   <center><img src="/img/principal/principal.png"  /></center>
+   <p align="right" style="font-weight:bold;font-size:small;margin-right:2cm;"><%= I18n.t("principal.index.principal.item_1") %></p>
+   <br/><br/>
+   <p style="text-indent: 3em; text-align: justify;"> <%= I18n.t("principal.index.principal.item_2") %></p>
+   <center><img src="/img/principal/mural.png"  /></center>
+   <p align="right" style="font-weight:bold;font-size:small;margin-right:2cm;"><%= I18n.t("principal.index.principal.item_3") %></p>
+</div>
+<br/><br/><br/><br/>
+
+
+<!--Botões -->
+<ul class="pager">
+   <li class="previous"><%= link_to("&larr; " + I18n.t("menu_main.index.title"), "menu_main") %></li>
+   <li class="next"><%= link_to(I18n.t("files.index.title") + " &rarr;", "files") %></li>
+</ul>

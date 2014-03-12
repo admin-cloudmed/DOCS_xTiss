@@ -1,0 +1,136 @@
+<div>
+
+   <!-- xtiss --> 
+   <div class="accordion-group">
+      <div class="accordion-heading">
+         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne" onclick="location.href = 'xTiss'">xTiss</a>
+      </div>
+      <div id="collapseOne" class="accordion-body collapse <%=is_group_active?("xTiss") %>">
+         <div class="accordion-inner">
+            <ul>
+               <li><a href="#"><%= link_to(I18n.t("xtiss.index.table_of_contents.how_it_works"), "xtiss#how_it_works_inner") %></a></li>
+               <li><a href="#"><%= link_to(I18n.t("xtiss.index.table_of_contents.features_yield"), "xtiss#features_yield_inner") %></a></li>
+               <li><a href="#"><%= link_to(I18n.t("xtiss.index.table_of_contents.who_uses"), "xtiss#who_uses_inner") %></a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   
+   <!-- Entendendo o Sistema -->
+   <div class="accordion-group">
+      <div class="accordion-heading">
+         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo" onclick="location.href = 'understanding_the_system'">Entendendo o Sistema</a>
+      </div>
+      <div id="collapseTwo" class="accordion-body collapse <%=is_group_active?("understanding_the_system") %>">
+         <div class="accordion-inner">
+            <ul>
+               <li><a href="#"><%= link_to(I18n.t("understanding_the_system.index.table_of_contents.welcome"), "understanding_the_system#welcome_inner") %></a></li>
+               <li><a href="#"><%= link_to(I18n.t("understanding_the_system.index.table_of_contents.flow"), "understanding_the_system#flow_inner") %></a></li>
+               <li><a href="#1_inner">1º Preparação</a></li>
+               <li><a href="#2_inner">2º Envio</a></li>
+               <li><a href="#3_inner">3º Análise</a></li>
+               <li><a href="#4_inner">4º Inconsistências</a></li>
+               <li><a href="#5_inner">5º Validado</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   
+   <!-- Menu Principal -->
+   <div class="accordion-group">
+      <div class="accordion-heading">
+         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree" onclick="location.href = 'menu_main'"> Menu Principal</a>
+      </div>
+      <div id="collapseThree" class="accordion-body collapse <%=is_group_active?("menu_main") %>">
+         <div class="accordion-inner">
+            <ul>
+               <li><a href="#"><%= link_to(I18n.t("menu_main.index.table_of_contents.menu_main"), "menu_main#menu_main_inner") %></a></li>
+               <li><a href="#"><%= link_to(I18n.t("menu_main.index.table_of_contents.main"), "menu_main#main_inner") %></a></li>
+               <li><a href="#"><%= link_to(I18n.t("menu_main.index.table_of_contents.files"), "menu_main#files_inner") %></a></li>
+               <li><a href="#"><%= link_to(I18n.t("menu_main.index.table_of_contents.config"), "menu_main#config_inner") %></a></li>
+               <li><a href="#"><%= link_to(I18n.t("menu_main.index.table_of_contents.logs"), "menu_main#logs_inner") %></a></li>
+               <li><a href="#"><%= link_to(I18n.t("menu_main.index.table_of_contents.downloads"), "menu_main#downloads_inner") %></a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   
+   <!-- Principal/Mural -->
+   <div class="accordion-group">
+      <div class="accordion-heading">
+         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour"  onclick="location.href = 'principal'"> Principal</a>
+      </div>
+      <div id="collapseFour" class="accordion-body collapse <%=is_group_active?("principal") %>">
+         <div class="accordion-inner">
+            <ul>
+               <li><a href="#"><%= link_to(I18n.t("principal.index.table_of_contents.principal"), "principal#principal_inner") %></a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   
+   <!-- Arquivos-->
+   <div class="accordion-group">
+      <div class="accordion-heading">
+         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour"  onclick="location.href = 'files'">Arquivos</a>
+      </div>
+      <div id="collapseFour" class="accordion-body collapse <%=is_group_active?("files") %>">
+         <div class="accordion-inner">
+            <ul>
+               <li><a href="#files"><%= link_to(I18n.t("files.index.table_of_contents.send_file"), "files#send_file_inner") %></a></li>
+               <li><a href="#step1"><%= link_to(I18n.t("files.index.table_of_contents.search_files"), "files#search_files_inner") %></a></li>
+               <li><a href="#step2"><%= link_to(I18n.t("files.index.table_of_contents.received_files"), "files#received_files_inner") %></a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   
+   <!-- Configurações -->
+   <div class="accordion-group">
+      <div class="accordion-heading">
+         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive" onclick="location.href = 'config'"> Configurações</a>
+      </div>
+      <div id="collapseSix" class="accordion-body collapse <%=is_group_active?("config") %>">
+         <div class="accordion-inner">
+            <ul>
+               <li><a href="#"><%= link_to(I18n.t("config.index.table_of_contents.all_configs"), "config#all_configs_inner") %></a></li>
+               <li><a href="#"><%= link_to(I18n.t("config.index.table_of_contents.hash_file"), "config#hash_file_inner") %></a></li>
+               <li><a href="#"><%= link_to(I18n.t("config.index.table_of_contents.edit_operator"), "config#edit_operator_inner") %></a></li>
+               <li><a href="#"><%= link_to(I18n.t("config.index.table_of_contents.maintenance_tables"), "config#maintenance_tables_inner") %></a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   
+   <!-- Logs -->
+   <div class="accordion-group">
+      <div class="accordion-heading">
+         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix" onclick="location.href = 'logs'"> Log de Movimentação</a>
+      </div>
+      <div id="collapseSix" class="accordion-body collapse <%=is_group_active?("logs") %>">
+         <div class="accordion-inner">
+            <ul>
+               <li><a href="#"><%= link_to(I18n.t("logs.index.table_of_contents.log"), "logs#log_inner") %></a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   
+   <!-- Downloads -->
+   <div class="accordion-group">
+      <div class="accordion-heading">
+         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSeven" onclick="location.href = 'downloads'">Downloads</a>
+      </div>
+      <div id="collapseSix" class="accordion-body collapse <%=is_group_active?("downloads") %>">
+         <div class="accordion-inner">
+            <ul>
+               <li><a href="#"><%= link_to(I18n.t("downloads.index.table_of_contents.validation_specifications"), "downloads#validation_specifications_inner") %></a></li>
+               <li><a href="#"><%= link_to(I18n.t("downloads.index.table_of_contents.error_specifications"), "downloads#error_specifications_inner") %></a></li>
+               <li><a href="#"><%= link_to(I18n.t("downloads.index.table_of_contents.winzip"), "downloads#winzip_inner") %></a></li>
+            </ul>
+         </div>
+      </div>
+   </div> 
+   
+   
+</div>

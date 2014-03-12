@@ -1,0 +1,81 @@
+<center>
+   <h1><%= I18n.t("downloads.index.title") %></h1>
+</center>
+<p class="more-info"><%= I18n.t("general.updated_at", :date => "07/11/2013") %></p>
+<h3><%= I18n.t("general.index") %></h3>
+
+
+<!--Indice -->
+<div class="metro-surface">
+	<center>
+		<table>
+			<tr>
+				<td>
+					<a href="#validation_specifications_inner">
+						<div class="metro-tile "><%= I18n.t("downloads.index.table_of_contents.validation_specifications") %></div>
+					</a>
+				</td>	 
+				<td>
+					<a href="#error_specifications_inner">
+						<div class="metro-tile "><%= I18n.t("downloads.index.table_of_contents.error_specifications") %></div>
+				    </a>
+				</td>
+				<td>
+					<a href="#winzip_inner">
+						<div class="metro-tile "><%= I18n.t("downloads.index.table_of_contents.winzip") %></div>
+					</a>
+				</td>	
+			</tr>
+		</table>
+	</center>
+</div>
+
+
+<!-- validation_specifications -->
+<div id ="validation_specifications" > &nbsp </div>
+<h2 id="validation_specifications_inner"><%= I18n.t("downloads.index.validation_specifications.item_1") %></h2>
+<div class="row-fluid">
+   <center><img src="/img/downloads/espvalidacoes.png"  /></center>
+   <br/>
+   <p align="right" style="font-weight:bold;font-size:small;margin-right:2cm;"><%= I18n.t("downloads.index.validation_specifications.item_3") %></p>
+   <br/><br/>
+   <p style="text-indent: 3em; text-align: justify;"> <%= I18n.t("downloads.index.validation_specifications.item_2") %></p>
+   <br/><br/>
+	<center><iframe src="/img/Downloads/EspecificacaodasValidacoes.pdf" style="width:90%; height:500px;" frameborder="0"></iframe></center>
+</div>
+<br/><br/><br/><br/>
+
+<!-- error_specifications -->
+<div id ="error_specifications" > &nbsp </div>
+<h2 id="error_specifications_inner"><%= I18n.t("downloads.index.error_specifications.item_1") %></h2>
+<div class="row-fluid">
+   <center><img src="/img/downloads/descerrors.png"  /></center>
+   <br/>
+   <p align="right" style="font-weight:bold;font-size:small;margin-right:2cm;"><%= I18n.t("downloads.index.error_specifications.item_3") %></p>
+   <br/><br/>
+   <p style="text-indent: 3em; text-align: justify;"> <%= I18n.t("downloads.index.error_specifications.item_2") %></p>
+   <br/><br/>
+	<center><iframe  src="/img/Downloads/descricaoErrosXtiss.pdf" style="width:90%; height:500px;" frameborder="0"></iframe></center>
+</div>
+<br/><br/><br/><br/>
+
+<!-- winzip -->
+<div id ="winzip" > &nbsp </div>
+<h2 id="winzip_inner"><%= I18n.t("downloads.index.winzip.item_1") %></h2>
+<div class="row-fluid">
+   <center><img src="/img/downloads/winzip.png"  /></center>
+   <br/>
+   <p align="right" style="font-weight:bold;font-size:small;margin-right:2cm;"><%= I18n.t("downloads.index.winzip.item_3") %></p>
+   <br/><br/>
+   <p style="text-indent: 3em; text-align: justify;"> <%= I18n.t("downloads.index.winzip.item_2") %></p>
+</div>
+<br/><br/><br/><br/>
+
+
+
+
+<!--Botões -->
+<ul class="pager">
+   <li class="previous"><%= link_to("&larr; " + I18n.t("logs.index.title"), "logs") %></li>
+   <li class="next"><%= link_to(I18n.t("xtiss.index.title") + " &rarr;", "xTiss") %></li>
+</ul>

@@ -1,0 +1,209 @@
+﻿"pt-BR":
+  main_menu:
+    home: "Início"
+    docs: "Documentação xTiss"
+    get_in_touch: "Entre em contato"
+  errors:
+    not_found:
+      title: "Página não encontrada"
+      description: "Não foi possível encontrar a página solicitada."
+  general:
+    updated_at: "Atualizado em %{date}"
+    index: "Índice"
+  footer:
+    paragraph_1: "Os nomes e logotipos xTiss são marcas registradas da CloudMed. Todos os direitos reservados."
+    get_in_touch: "Entre em contato"
+  xtiss:
+    index:
+      title: "Visão geral do serviço xTiss"
+      table_of_contents:
+        index: "Índice"
+        how_it_works: "O que é?"
+        features_yield: "Funcionalidades e Finalidades."
+        who_uses: "Quem Pode Utilizar?"
+      how_it_works:
+        paragraph_1: "O xTiss é uma solução para área de saúde no modelo <a href='http://pt.wikipedia.org/wiki/Software_como_serviço' target='blank' class='external'>SaaS</a>. Sistema que auxilia o processo de validação e crítica das regras de formatação dos arquivos XML no formato TISS enviados pelos prestadores de serviço, obedecendo a RN 190 da ANS."
+      features_yield:
+        paragraph_1: "O xTiss é a solução da CloudMed ideal para facilitar a integração entre os prestadores de serviços e a operadora do plano de saúde."
+        feature_1: "Características"
+        feature_2: "Desenvolvido para Web, ou seja, sem necessidade de qualquer instalação (.exe);"
+        feature_3: "Acessível por qualquer meio eletrônico que possua internet (PC'</b>  s, Notebooks, Tablets, Celulares, etc);"
+        feature_4: "Benefícios"
+        feature_5: "Economiza tempo da operadora do plano de saúde, pois o prestador é totalmente responsável por enviar os arquivos e corrígi-los, evitando assim emails desnecessários;"
+        feature_6: "Auditoria completa, registrando toda e qualquer movimentação feita pelo usuário;"
+        feature_7: "Segurança no acesso de usuários por perfis personalizados;"
+      who_uses:
+        paragraph_1: "Nossa solução está no mercado há sete anos, trabalhando na mais alta transparência, segurança e facilidade. Potenciais forças que podem utilizar nossa aplicação, são empresas como:"
+        item_1: "* Operadoras de Planos de Saúde que precisam atender a RN 190;"
+        item_2: "* Hospitais credenciados;"
+        item_3: "* Consultórios;"
+        item_4: "* Clínicas;"
+        item_5: "* Prestadores de serviços."
+  understanding_the_system:
+   index:
+      title: "Entendendo o Sistema"
+      table_of_contents:
+        index: "Índice" 
+        welcome: "Bem Vindo!"
+        flow: "Como Funciona?" 
+      welcome:
+        item_1: "Olá, bem-vindo ao xTiss da CloudMed! Iniciaremos agora, um passeio pelo sistema e suas funções, entendendo seus principais processos e funcionalidades. Fique à vontade e, qualquer dúvida, entre em contato conosco!"
+      flow:
+        item_1: "O prestador de serviços compacta em um arquivo (.ZIP) os arquivos (.XML) TISS que precisa enviar ao Plano de Saúde."
+        item_2: "De posse de um nome de usuário e senha fornecidos pelo Plano de Saúde, o prestador acessa o xTiss na WEB, sem precisar instalar nenhum programa, bastando usar um navegador de internet. Através da opção de <b>'Enviar Arquivo'</b> disponível no xTiss, o prestador envia o arquivo compactado para análise e crítica."
+        item_3: "Esse passo fica inteiramente por conta do xTiss, ele critica o conteúdo do arquivo XML de acordo com os schemas TISS fornecidos pela ANS (estrutura do arquivo, regras específicas da Operadora, Plano de Saúde e etc). Imediatamente o sistema informa ao prestador as ocorrências geradas pela validação no Upload."
+        item_4: "Se os arquivos enviados contiverem inconsistências  eles serão recusados, e um log de críticas é mostrado ao prestador, para que o mesmo possa providenciar as correções e então enviar o arquivo novamente."
+        item_5: "Agora, se todos os arquivos foram validados pelo xTiss com 100% de aprovação, eles serão disponibilizados para o Plano de Saúde fazer o download e então processá-los no sistema gestor da Operadora."
+  menu_main:
+   index:
+      title: "Menu Principal"
+      table_of_contents: 
+        index: "Índice"
+        menu_main: "Menu Principal"
+        main: "Principal"
+        files: "Arquivos"
+        config: "Configurações"
+        logs: "Logs de Movimentação"
+        downloads: "Downloads"
+      menu_main:
+        item_1: "Abaixo você vê o menu principal do sistema. Ele sempre estará presente e visível no topo da tela, disponibilizando as ações para o usuário, de acordo com suas permissões previamente definidas."
+        item_2: "Menu Principal"
+        item_3: "Veja abaixo, disponibilizamos cada opção do menu principal para que você possa ir direto ao ponto que deseja :)"
+      main:
+        item_1: "Principal/Mural"
+      files:
+        item_1: "Arquivos"
+      config:
+        item_1: "Configurações"
+      logs:
+        item_1: "Log de Movimentação"
+      downloads:
+        item_1: "Downloads"
+  principal:
+   index:
+      title: "Principal"
+      table_of_contents: 
+        index: "Índice"
+        principal: "Principal/Mural"
+      principal:
+        item_1: "Menu > Principal"
+        item_2: "Aqui é a tela de entrada do sistema, toda vez que você acessar o xTiss será redirecionado e visualizará essa página. Veja que ela contém as informações mais relevantes para o seu usuário no sistema. Além disso, logo abaixo apresentamos nosso mural, nele você visualiza as publicações feitas pela CloudMed, como informações úteis aos usuários, dicas e alertas. Dessa forma, ser informado fica rápido e prático! "
+        item_3: "Principal/Mural"
+  files:
+   index:
+      title: "Arquivos"
+      table_of_contents: 
+        index: "Índice"
+        send_file: "Enviar Arquivo"
+        search_files: "Pesquisar Arquivo"
+        received_files: "Arquivos Recebidos"
+      send_file:
+        item_1: "Menu > Arquivo > Enviar Arquivo"
+        item_2: "Praticamente, essa opção se resume em quase 90% da parte operacional do xTiss. Ao acessar, vemos que o xTiss solicita os arquivos para serem validados, lembramos que o arquivo xml precisa estar compactado <b>'.zip'</b> para que o xTiss possa abrir,ler e validar os arquivos <b>'.xml'</b>."
+        item_3: "Clique em escolher arquivo, selecione o arquivo <b>'.zip'</b> com os xml's compactados e clique em OK"
+        item_4: "Com o arquivo selecionado, clique em <b>'Validar Arquivo'</b>, a partir daqui o xTiss iniciará a validação no arquivo selecionado, ao final, teremos dois possíveis resultados, veja abaixo:"
+        item_5: "<stong><b>Arquivo Inválido/Inconsistente</b></strong>"
+        item_6: "Quando existir informações inválidas ou informações que fogem do que é definido pela ANS e das regras que definimos nas <a href='/config#all_configs'>Configurações Gerais</a>, o xTiss destacará aqui essas inconsistências, clique no alerta em vermelho e veja quais foram as inconsistências do arquivo, para uma identificação rápida, utilize nossa <a href='/downloads#error_specifications'>Descrição de Erros</a>."
+        item_7: "<stong><b>Arquivo Validado com Sucesso</b></strong>"
+        item_8: "Quando o aquivo analisando pelo xTiss é validado com sucesso em todas suas questões, sejam elas de formatação, conteúdo e validações específicas da empresa que estamos acessando, o sistema exbirá essa tela acima. Com essa validação feita, o arquivo que foi analisado é salvo no sistema e fica disponivel para que o plano de saúde faça o download e envie o mesmo para a ANS com a certeza que ele está correto."
+      search_files:
+        item_1: "Menu > Arquivo > Pesquisar Arquivo"
+        item_2: "Acessando o menu acima chegamos até a tela que é exibida abaixo. Veja que nela temos vários e diferentes tipos de filtros onde conseguimos encontrar o arquivo desejado com mais facilidade."
+        item_3: "Colocando os filtros desejados e clicando em <b>'Pesquisar'</b>, o xTiss pesquisará em sua base de dados arquivos referente à pesquisa, se ele encontrar a seguinte tela é exibida:"
+        item_4: "Repare que os arquivos encontrados que foram validados aparecem como um link onde clicando você tem acesso às informações do arquivo, já os que não foram validados não tem essa opção e ficam marcados na cor vermelha."
+      received_files:
+        item_1: "Menu > Arquivo > Arquivos Recebidos"
+        item_2: "Essa opção pode ser acessada pelo menu acima, clicando nela, você chegará até a tela abaixo, veja:"
+        item_3: "Veja que você tem a opção de filtrar os arquivos por um período de data e também por um prestador específico:"
+        item_4: "Realizando a pesquisa, se o xTiss encontrar algum arquivo com os filtros, ele retornará a seguinte tela exibida acima, também nos dá a opção de exportar o relatório para um arquivo Excel (.xls) ou até mesmo imprimir."
+  config:
+   index:
+      title: "Configurações"
+      table_of_contents: 
+        index: "Índice"
+        all_configs: "Configurações Gerais"
+        hash_file: "Criar Hash de Arquivo"
+        edit_operator: "Editar Operadora"
+        maintenance_tables: "Manutanção Tabelas"
+      all_configs:
+        item_1: "Configurações Gerais"
+        item_2: "Menu > Configurações > Configurações Gerais"
+        item_3: "Aqui em Configurações Gerais, temos todas as configurações e particularidades que o xTiss irá tratar com a empresa que estamos acessando, se você é um prestador, certamente não terá essa opção liberada, pois, o plano de saúde que define as regras de validação nos arquivos. Veja a lista abaixo, vamos percorrer e entender opção à opção, para editar uma opção específica, basta selecioná-la:"
+        item_4: "<stong><b>Tipos de Guias</b></strong>"
+        item_5: "Aqui a Operadora cadastra os Tipos de Guias que poderão ser validados. O sistema valida quatro tipos de guia: SP_SADT, Resumo de Internação, Honorário Individual e Consulta. Pode-se optar por validar arquivos XML dos quatro tipos de guias, ou apenas de alguns. </br></br>  Clicando em editar, os campos <b>'Número Máximo de Contas'</b> , <b>'Tag do Número da Guia'</b> e <b>'Obrigar Consistência do Número da Guia?'</b> se abrem para edição. Você pode alterar estes dados e clicar em para salvar as alterações feitas, ou em para cancelar as modificações. </br></br> - <b>'Número Máximo de Contas'</b>: Este item refere-se ao número máximo de contas/guias que o arquivo XML pode conter. Cada arquivo XML só pode ter um tipo de guia, mas podem ter inúmeras contas e uma quantidade máxima que se for ultrapassada, acusará erro ao Prestador no momento do envio. </br></br> - <b>'Tag do Número da Guia'</b>: No arquivo XML, para cada tipo de guia a tag que contém o número da guia pode ser diferente. O sistema já deixa previamente cadastrado, mas caso aconteça alguma modificação basta alterar este item. </br></br> - <b>'Obrigar Consistência do Número da Guia?'</b>: A Operadora pode optar em obrigar ou não o número de guia para cada conta do arquivo. Se for obrigatório e o arquivo não conter, uma mensagem de erro será mostrada ao Prestador no momento do envio. "
+        item_6: "<stong><b>Tipos de Tabela</b></strong>"
+        item_7: "O xTiss valida quatro tipos de tabelas: Amb 92, Brasíndice, Simpro e Tuss. A Operadora pode selecionar quais os tipos que deseja validar nos arquivos XML, ou não selecionar nenhum para não validar."
+        item_8: "<stong><b>Validação com Web Service</b></strong>"
+        item_9: "Essa opção Validação com Web Service é bastante interessante! A Operadora pode optar por fazer a integração entre o xTiss e seu sistema de gestão, comunicando os dois sistemas através de um Web Service desenvolvido pela própria Operadora. Se esta opção for utilizada deve-se marcar <b>'Sim'</b> e adicionar o endereço do WebService nesta configuração ;)"
+        item_10: "<stong><b>Validação do Nº de Guia de Solicitação</b></strong>"
+        item_11: "Sendo bastante resoluta, podemos marcar se o xTiss levará em consideração a Validação do Nº de Guia de Solicitação ou não."
+        item_12: "<stong><b>Quantidade de Dígitos (Prestador e Guia)</b></strong>"
+        item_13: "Aqui, podemos definir a Quantidade de Dígitos dos Prestadores e das Guias presentes no arquivo Tiss. Esta opção é responsável por configurar a quantidade de dígitos que os campos <b>'Código do Prestador'</b> e <b>'Número de Guia'</b> devem conter. </br> </br> Selecionando <b>'Guia/Senha'</b> ou <b>'Código do Prestador'</b> você pode escolher como será a regra de quantidade de dígitos, estão entre as opções: <b>'Não Consistir'</b> , <b>'Menor/Igual'</b>, <b>'Maior/Igual'</b>, <b>'Igual'</b> e <b>'Entre'</b>. Após selecionar a regra e digitar o valor clique em <b>'ADICIONAR'</b>."
+        item_14: "<stong><b>Tipo de Despesa - Diárias</b></strong>"
+        item_15: "Pode-se obrigar ou não a consistência do tipo de despesa em guias do tipo Resumo de Internação, ou seja, para cada guia do arquivo XML deve haver ao menos um Tipo de Despesa igual a 5 – Diária."
+        item_16: "<stong><b>Indicação Clínica</b></strong>"
+        item_17: "Para guias do tipo <b>'SP_SADT'</b> a Operadora pode obrigar ou não a validação do campo de Indicação Clínica. Selecione <b>'Sim'</b> ou <b>'Não'</b> e clique em ADICIONAR."
+        item_18: "<stong><b>Validar Nome do Arquivo</b></strong>"
+        item_19: "Aqui configuramos se o xTiss irá verificar e validar o nome do arquivo que está sendo validado. O nome do arquivo xml deve ser composto por duas partes: número seqüencial de 20 dígitos (formatado com  <b>'0'</b>   à esquerda) e o hash do arquivo, como por exemplo <b>'00000000000000001054_0a92df9083c86df3d01e41a2657e250a.xml'."
+        item_20: "<stong><b>Validade dos Schemas</b></strong>"
+        item_21: "Aqui são cadastradas as versões de schemas Tiss disponibilizados pela ANS. Para cadastrar os schemas basta colocar o nome, o período de validade e clicar em ADICIONAR. Veja figura abaixo. A Operadora pode aceitar arquivos gerados em todos as versões de schema ou apenas algumas em específico, para isso coloque uma data limite de validade. Se o Prestador tentar enviar um arquivo gerado com um schema que está com a data de validade ultrapassada, o sistema mostrará uma mensagem de erro no momento do envio."
+        item_22: "<stong><b>URL Web Service</b></strong>"
+        item_23: "Esta configuração não é de cadastramento obrigatório. A Operadora pode descrever aqui suas URLs de Web Services internas para que fiquem dispostas aos Prestadores. A RN 190 dita que estas URL's precisam ser mostradas aos Prestadores em um ambiente seguro, por isso a opção de dispô-las aqui. Digite as URLs que forem necessárias e clique em ADICIONAR."
+        item_24: "<stong><b>Quantidade/Valor de Procedimentos e Despesas</b></strong>"
+        item_25: "Esta configuração é opcional. Aqui a Operadora pode validar ou não a quantidade e os valores (unitário e total) como maiores que <b>'0'</b>, ou seja, que não sejam nulos, para procedimentos e despesas.Selecione <b>'Sim'</b> ou <b>'Não'</b> para os itens que deseja validar como não nulos e clique em ADICIONAR. "
+        item_26: "<stong><b>Carteira do Beneficiário</b></strong>"
+        item_27: "A Operadora pode validar ou não a carteira do beneficiário no arquivo XML, tanto na quantidade de dígitos igual a 17, como no cálculo do dígito verificador.Para isso, selecione <b>'Sim'</b> ou <b>'Não'</b> nas duas opções de validação e clique em ADICIONAR."
+        item_28: "<stong><b>Tipos de Atendimento Não Permitidos</b></strong>"
+        item_29: "Esta configuração também não é de cadastramento obrigatório. A Operadora tem a opção de selecionar Tipos de Atendimento que não serão permitidos nos arquivos XML que seus Prestadores enviarem. Selecione os Tipos de Atendimento que não serão permitidos e clique em ADICIONAR. Veja a imagem acima.."
+        item_30: "<stong><b>Tipo de Guia - Pacotes de Procedimentos</b></strong>"
+        item_31: "Esta configuração também é opcional. Neste  item a operadora opta por validar ou não os tipos de guias dos pacotes de procedimentos (<b>'tipoTabela = 98'</b>) com o tipo de guia principal do arquivo xml. Selecione <b>'Sim'</b> ou <b>'Não'</b> e clique em ADICIONAR."
+        item_32: "<stong><b>Validar Número de Lote</b></strong>"
+        item_33: "Esta configuração também é opcional. Podemos marcar <b>'Sim'</b> caso queremos que o xtiss verifique e valide os numeros de lote de cada arquivo, evitando assim que um prestador envie dois arquivos com o mesmo número."
+      hash_file:
+        item_1: "Criar Hash de Arquivo"
+        item_2: "Menu > Configurações > Criar Hash de Arquivo"
+        item_3: "Nesta tela a Operadora pode recriar o hash de qualquer arquivo XML, caso ela faça alguma alteração em algum arquivo XML para  testes por exemplo. Para recriar o hash de algum arquivo, basta selecionar um arquivo XML zipado clicando em <b>'Procurar'</b> e depois em CONCLUIR. Logo abaixo será mostrado o hash do arquivo em azul, que poderá ser copiado e colocado no arquivo XML."
+      edit_operator:
+        item_1: "Editar Dados da Operadora"
+        item_2: "Menu > Configurações > Editar Dados da Operadora"
+        item_3: "A opção do menu <b>'Editar Dados da Operadora'</b> permite que a operadora altere ou inclua  novos dados, informações ao seu cadastro no sistema. Para alterar as informações clique em EDITAR. A tela será mostrada como na imagem abaixo. Altere os itens que forem necessários, e clique em ATUALIZAR para salvar, ou em CANCELAR para descartar as modificações."
+      maintenance_tables:
+        item_1: "Manutenção de Tabelas"
+        item_2: "Menu > Configurações > Manutenção de Tabelas"
+        item_3: "Acessando o menu acima, temos acesso as tabelas que estão no xTiss para realizar as validações dos arquivos, ao carregar a página, vemos três opções disponiveis, veja abaixo:"
+        item_4: "<stong><b>Cadastrar Item de Tabela (Manual)</b></strong>"
+        item_5: "Aqui podemos cadastrar itens das seguintes tabelas: Amb 92, Brasíndice, Simpro e Tuss. Os itens cadastrados nesta área serão utilizados na validação do arquivo XML. </br> Selecione para qual tipo de tabela você deseja adicionar um item: Simpro, Brasíndice, Amb 92 ou Tuss. Preencha o código e o nome/descrição e clique em ADICIONAR."
+        item_6: "<stong><b>Importar Arquivo de Tabela</b></strong>"
+        item_7: "Nesta opção você seleciona qual o tipo de tabela que deseja importar, e clicando em <b>'Procurar'</b> escolha o arquivo que contém os itens de acordo com o layout que está descrito na tela. Todos os arquivos para importação devem estar com a extensão <b>'.xls'</b> – arquivo do Excel. </br> Não importa se no arquivo existem itens que já estão cadastrados no sistema, pois só serão incluídos itens novos e atualizados os já existentes."
+        item_8: "<stong><b>Pesquisar Tabelas</b></strong>"
+        item_9: "Os itens das tabelas que foram cadastrados anteriormente podem ser pesquisados nesta tela. Para pesquisar escolha o tipo de tabela e clique em PESQUISAR (trará todos os registros da tabela), ou digite o código e/ou parte da descrição e clique em PESQUISAR."
+  logs:
+   index:
+      title: "Logs de Movimentação"
+      table_of_contents: 
+        index: "Índice"
+        log: "Logs de Movimentação"
+      log:
+        item_1: "Logs de Movimentação"
+        item_2: "Nesta opção do menu a Operadora tem acesso a tudo que aconteceu no sistema através de um log. Todos os acessos feitos por ela ou por seus prestadores estarão registrados aqui: acessos as páginas do xTiss, envio de arquivos e seus possíveis erros e etc, todas as informações com data/ hora e  login de que realizou a ação. Para pesquisar os logs de movimentação você pode digitar um destes critérios de busca: data- período e/ou palavra na descrição do log. Clique em PESQUISAR. "
+        item_3: "Menu > Logs de Movimentação"
+  downloads:
+   index:
+      title: "Downloads"
+      table_of_contents: 
+        index: "Índice"
+        validation_specifications: "Especificação das Validações"
+        error_specifications: "Descrição dos Erros"
+        winzip: "Compactador de Arquivos(WinZip)"
+      validation_specifications:
+        item_1: "Especificação das Validações"
+        item_2: "Especificação das validações, refere-se a um arquivo PDF que contém uma descrição detalhada de todas as validações que o xTiss faz com o arquivo XML enviado pelo Prestador. Se a Operadora ou o Prestador possuírem dúvidas sobre o que está sendo validado em seus arquivos, ou como está sendo feita a validação, basta acessar essa especificação."
+        item_3: "Menu > Downloads > Validacao das Especificações"
+      error_specifications:
+        item_1: "Descrição dos Erros"
+        item_2: "Descrição dos erros gerados na validação, trata-se de um arquivo PDF que contém as descrições de todos os erros gerados pelo xTiss no momento da validação do arquivo xml, deixando mais claro ao prestador o que a mensagem significa, e se possível, quais passos devem ser tomados para a resolução do problema."
+        item_3: "Menu > Downloads > Descrição dos Erros"
+      winzip:
+        item_1: "Compactador de Arquivos"
+        item_2: "O Compactador de Arquivos WinZip, é um <b>'atalho'</b> para facilitar o envio de arquivos pelo Prestador, já que o arquivo para ser enviado precisa estar <b>'zipado (.zip)'</b>, nesta opção ele pode baixar o programa de compactar arquivos, caso ainda não possua. "
+        item_3: "Menu > Downloads > Compactador de Arquivos(WinZip)"

@@ -1,0 +1,188 @@
+<center>
+   <h1><%= I18n.t("menu_main.index.title") %></h1>
+</center>
+<p class="more-info"><%= I18n.t("general.updated_at", :date => "07/11/2013") %></p>
+<h3><%= I18n.t("general.index") %></h3>
+
+
+<!--Indice -->
+<div class="metro-surface">
+   <center>
+	   <table>
+		  <tr>
+			 <td>
+				<a href="#menu_main_inner">
+				   <div class="metro-tile"><%= I18n.t("menu_main.index.table_of_contents.menu_main") %></div>
+				</a>
+			 </td>	
+			 <td>
+				<a href="#">
+				   <div class="metro-tile metro-tile-small"></div>
+				</a>
+			 </td> 
+			 <td>
+				<a href="#main_inner">
+				   <div class="metro-tile "><%= I18n.t("menu_main.index.table_of_contents.main") %></div>
+				</a>
+			 </td>
+			 <td>
+				<a href="#files_inner">
+				   <div class="metro-tile "><%= I18n.t("menu_main.index.table_of_contents.files") %></div>
+				</a>
+			 </td>
+		  </tr>
+	   </table>
+	   <table>
+		  <tr>
+			 <td>
+				<a href="#config_inner">
+				   <div class="metro-tile "><%= I18n.t("menu_main.index.table_of_contents.config") %></div>
+				</a>
+			 </td>	
+			 <td>
+				<a href="#logs_inner">
+				   <div class="metro-tile "><%= I18n.t("menu_main.index.table_of_contents.logs") %></div>
+				</a>
+			 </td>
+			 <td>
+				<a href="#">
+				   <div class="metro-tile metro-tile-small "></div>
+				</a>
+			 </td>
+			 <td>
+				<a href="#downloads_inner">
+				   <div class="metro-tile  "><%= I18n.t("menu_main.index.table_of_contents.downloads") %></div>
+				</a>
+			 </td>
+		  </tr>
+	</table>
+   </center>
+</div>
+
+
+<!--Menu Principal -->
+<div id ="menu_main" > &nbsp </div>
+<h2 id="menu_main_inner"><%= I18n.t("menu_main.index.table_of_contents.menu_main") %></h2>
+<div class="row-fluid">
+   <p style="text-indent: 3em; text-align: justify;"> <%= I18n.t("menu_main.index.menu_main.item_1") %></p>
+   <center><img src="/img/menu_main/menu.png"  /></center>
+   <p align="right" style="font-weight:bold;"><%= I18n.t("menu_main.index.menu_main.item_2") %></p>
+   <p style="text-indent: 3em; text-align: justify;"> <%= I18n.t("menu_main.index.menu_main.item_3") %></p>
+</div>
+
+
+<!--Principal-->
+<div id ="main" > &nbsp </div>
+<h2 id="main_inner"><%= I18n.t("menu_main.index.table_of_contents.main") %></h2>
+<div class="row-fluid">
+   <center><img src="/img/menu_main/principal.png" /></center>
+   <p align="right" style="font-weight:bold;"><%= I18n.t("menu_main.index.main.item_1") %></p>
+   <div class="metro-surface">
+	   <center>
+		   <table>
+			  <tr>
+				 <td>
+					<a href="principal">
+						<div class="metro-tile  "><%= I18n.t("menu_main.index.table_of_contents.main") %></div>
+					</a>
+				 </td>
+			  </tr>
+		   </table>
+		</center>
+	</div>
+</div>
+
+
+<!-- Arquivos-->
+<div id ="files" > &nbsp </div>
+<h2 id="files_inner"><%= I18n.t("menu_main.index.table_of_contents.files") %></h2>
+<div class="row-fluid">
+   <center><img src="/img/menu_main/files.png" /></center>
+   <p align="right" style="font-weight:bold;"><%= I18n.t("menu_main.index.files.item_1") %></p>
+   <div class="metro-surface">
+	   <center>
+		   <table>
+			  <tr>
+				 <td>
+					<a href="files">
+						<div class="metro-tile   "><%= I18n.t("menu_main.index.table_of_contents.files") %></div>
+					</a>
+				 </td>
+			  </tr>
+		   </table>
+		</center>
+	</div>
+</div>
+
+
+<!-- Configurações -->
+<div id ="config" > &nbsp </div>
+<h2 id="config_inner"><%= I18n.t("menu_main.index.table_of_contents.config") %></h2>
+<div class="row-fluid">
+   <center><img src="/img/menu_main/config.png" /></center>
+   <p align="right" style="font-weight:bold;"><%= I18n.t("menu_main.index.config.item_1") %></p>
+   <div class="metro-surface">
+	   <center>
+		   <table>
+			  <tr>
+				 <td>
+					<a href="config">
+						<div class="metro-tile   "><%= I18n.t("menu_main.index.table_of_contents.config") %></div>
+					</a>
+				 </td>
+			  </tr>
+		   </table>
+		</center>
+	</div>
+ </div>
+ 
+ 
+ <!-- Logs -->
+<div id ="logs" > &nbsp </div>
+<h2 id="logs_inner"><%= I18n.t("menu_main.index.table_of_contents.logs") %></h2>
+<div class="row-fluid">
+   <center><img src="/img/menu_main/logs.png" /></center>
+   <p align="right" style="font-weight:bold;"><%= I18n.t("menu_main.index.table_of_contents.logs") %></p>
+   <div class="metro-surface">
+	   <center>
+		   <table>
+			  <tr>
+				 <td>
+					<a href="logs">
+						<div class="metro-tile   "><%= I18n.t("menu_main.index.table_of_contents.logs") %></div>
+					</a>
+				 </td>
+			  </tr>
+		   </table>
+		</center>
+	</div>
+</div>
+
+
+<!-- Downloads -->
+<div id ="downloads" > &nbsp </div>
+<h2 id="downloads_inner"><%= I18n.t("menu_main.index.table_of_contents.downloads") %></h2>
+<div class="row-fluid">
+   <center><img src="/img/menu_main/downloads.png" /></center>
+   <p align="right" style="font-weight:bold;"><%= I18n.t("menu_main.index.downloads.item_1") %></p>
+   <div class="metro-surface">
+	   <center>
+		   <table>
+			  <tr>
+				 <td>
+					<a href="downloads">
+						<div class="metro-tile   "><%= I18n.t("menu_main.index.table_of_contents.downloads") %></div>
+					</a>
+				 </td>
+			  </tr>
+		   </table>
+		</center>
+	</div>
+</div>
+
+
+<!--Botões -->
+<ul class="pager">
+   <li class="previous"><%= link_to("&larr; " + I18n.t("understanding_the_system.index.title"), "understanding_the_system") %></li>
+   <li class="next"><%= link_to(I18n.t("principal.index.title") + " &rarr;", "principal") %></li>
+</ul>

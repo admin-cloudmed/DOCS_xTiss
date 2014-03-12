@@ -1,0 +1,77 @@
+<center>
+   <h1><%= I18n.t("logs.index.title") %></h1>
+</center>
+<p class="more-info"><%= I18n.t("general.updated_at", :date => "07/11/2013") %></p>
+<h3><%= I18n.t("general.index") %></h3>
+
+
+<!--Indice -->
+<div class="metro-surface">
+	<center>
+		<table>
+			<tr>
+				<td>
+					<a href="#log_inner">
+						<div class="metro-tile "><%= I18n.t("logs.index.table_of_contents.log") %></div>
+					</a>
+				</td>	 
+				<td>
+					<a href="#">
+						<div class="metro-tile metro-tile-small"></div>
+				    </a>
+				</td>
+				<td>
+					<a href="#drive_inner">
+						<div class="metro-tile metro-tile-small"><%= I18n.t("logs.index.table_of_contents.drive") %></div>
+				    </a>
+				</td>
+				<td>
+					<a href="#indexing_inner">
+						<div class="metro-tile "><%= I18n.t("logs.index.table_of_contents.indexing") %></div>
+					</a>
+				</td>	
+			</tr>
+		</table>
+	</center>
+</div>
+
+
+<!-- logs -->
+<div id ="log" > &nbsp </div>
+<h2 id="log_inner"><%= I18n.t("logs.index.log.item_1") %></h2>
+<div class="row-fluid">
+   <p style="text-indent: 3em; text-align: justify;"> <%= I18n.t("logs.index.log.item_2") %></p>
+   <center><img src="/img/logs/"  /></center>
+   <p align="right" style="font-weight:bold;font-size:small;margin-right:2cm;"><%= I18n.t("logs.index.log.item_3") %></p>
+</div>
+<br/><br/><br/><br/>
+
+
+<!-- drive -->
+<div id ="drive" > &nbsp </div>
+<h2 id="drive_inner"><%= I18n.t("logs.index.drive.item_1") %></h2>
+<div class="row-fluid">
+   <p style="text-indent: 3em; text-align: justify;"> <%= I18n.t("logs.index.drive.item_2") %></p>
+   <center><img src="/img/drive/"  /></center>
+   <p align="right" style="font-weight:bold;font-size:small;margin-right:2cm;"><%= I18n.t("logs.index.drive.item_3") %></p>
+</div>
+<br/><br/><br/><br/>
+
+
+<!-- indexing -->
+<div id ="indexing" > &nbsp </div>
+<h2 id="indexing_inner"><%= I18n.t("logs.index.indexing.item_1") %></h2>
+<div class="row-fluid">
+   <p style="text-indent: 3em; text-align: justify;"> <%= I18n.t("logs.index.indexing.item_2") %></p>
+   <center><img src="/img/indexing/"  /></center>
+   <p align="right" style="font-weight:bold;font-size:small;margin-right:2cm;"><%= I18n.t("logs.index.indexing.item_3") %></p>
+</div>
+<br/><br/><br/><br/>
+
+
+
+<!--Botões -->
+<ul class="pager">
+   <li class="previous"><%= link_to("&larr; " + I18n.t("config.index.title"), "config") %></li>
+   <li class="next"><%= link_to(I18n.t("expired_documents.index.title") + " &rarr;", "expired_documents") %></li>
+</ul>
