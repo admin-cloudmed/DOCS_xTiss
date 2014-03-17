@@ -20,10 +20,6 @@ before do
   end
 end
 
-config.action_dispatch.default_headers = {
-    'X-Frame-Options' => 'ALLOWALL'
-}
-
 # HOME
 get "/" do redirect "/#{current_locale}/xTiss" end
 
@@ -135,7 +131,6 @@ def option_select(value, text)
   selected = session[:locale] == value ? ' selected' : ''
   "<option value=#{value}#{selected}>#{text}</option>"
 end
-
 
 
 
