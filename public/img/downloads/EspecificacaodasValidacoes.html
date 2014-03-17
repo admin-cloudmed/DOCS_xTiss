@@ -1,0 +1,192 @@
+
+<!-- saved from url=(0087)http://www.pdf.investintech.com/preview/7b8dabda-addd-11e3-a493-002590d31986/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_003{font-family:Arial,serif;font-size:16.1px;color:rgb(0,127,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_003{font-family:Arial,serif;font-size:16.1px;color:rgb(0,127,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_004{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,127);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_004{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,127);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_005{font-family:Times,serif;font-size:12.1px;color:rgb(255,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_005{font-family:Times,serif;font-size:12.1px;color:rgb(255,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_006{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_006{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_002{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_002{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_007{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_007{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="./EspecificacaodasValidacoes_files/wz_jsgraphics.js"></script><style type="text/css"></style>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-297px;top:0px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="./EspecificacaodasValidacoes_files/background1.jpg" width="595" height="842"></div>
+<div style="position:absolute;left:98.60px;top:48.30px" class="cls_003"><span class="cls_003">Especificação das Regras de Consistência do xTiss.</span></div>
+<div style="position:absolute;left:56.80px;top:94.50px" class="cls_004"><span class="cls_004">* As especificações das validações estão na mesma ordem em que são executadas no sistema. *</span></div>
+<div style="position:absolute;left:56.80px;top:137.90px" class="cls_005"><span class="cls_005">Validação da Extensão do Arquivo.</span></div>
+<div style="position:absolute;left:56.80px;top:165.50px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: A primeira validação feita é se o arquivo selecionado possui a extensão “.zip”.</span></div>
+<div style="position:absolute;left:56.80px;top:195.10px" class="cls_005"><span class="cls_005">Validação de Hash</span><span class="cls_002">.</span></div>
+<div style="position:absolute;left:56.80px;top:222.70px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: O sistema calcula o hash do arquivo e verifica se é o mesmo que está contido na tag</span></div>
+<div style="position:absolute;left:56.80px;top:236.50px" class="cls_007"><span class="cls_007">“&lt;ansTISS:hash&gt;”.</span></div>
+<div style="position:absolute;left:56.80px;top:266.10px" class="cls_005"><span class="cls_005">Validação de Nome do Arquivo</span><span class="cls_002">.</span></div>
+<div style="position:absolute;left:56.80px;top:293.70px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Segundo normas da ANS, o nome do arquivo xml deve seguir o seguinte padrão:</span></div>
+<div style="position:absolute;left:56.80px;top:307.50px" class="cls_002"><span class="cls_002">número seqüencial de 20 dígitos + “_” + hash do arquivo, como por exemplo o nome à seguir:</span></div>
+<div style="position:absolute;left:56.80px;top:321.30px" class="cls_002"><span class="cls_002">00000000000000024879_cf28a11853d21218f975c8c086d9c42c.xml.</span></div>
+<div style="position:absolute;left:56.80px;top:350.90px" class="cls_005"><span class="cls_005">Validação de Arquivo já Enviado.</span></div>
+<div style="position:absolute;left:56.80px;top:378.50px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Com base no hash do arquivo é verificado se já existe um arquivo gravado no banco</span></div>
+<div style="position:absolute;left:56.80px;top:392.30px" class="cls_002"><span class="cls_002">de dados com aquele mesmo hash. Se sim, o arquivo já foi enviado com sucesso anteriormente e</span></div>
+<div style="position:absolute;left:56.80px;top:406.10px" class="cls_002"><span class="cls_002">não pode ser enviado de novo.</span></div>
+<div style="position:absolute;left:56.80px;top:435.70px" class="cls_005"><span class="cls_005">Validação de Configuração do Schema</span><span class="cls_002">.</span></div>
+<div style="position:absolute;left:56.80px;top:463.30px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Verifica se o nome do schema está cadastrado nas configurações, e se a data de</span></div>
+<div style="position:absolute;left:56.80px;top:477.10px" class="cls_002"><span class="cls_002">vigência está dentro do período de validade estabelecido.</span></div>
+<div style="position:absolute;left:56.80px;top:506.70px" class="cls_005"><span class="cls_005">Verificação de Usuário “Logado”</span><span class="cls_002">.</span></div>
+<div style="position:absolute;left:56.80px;top:534.30px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Para enviar arquivos, o usuário (prestador) “logado” no sistema deve ser o mesmo</span></div>
+<div style="position:absolute;left:56.80px;top:548.10px" class="cls_002"><span class="cls_002">prestador de origem do arquivo.</span></div>
+<div style="position:absolute;left:56.80px;top:575.70px" class="cls_002"><span class="cls_002">Esta   verificação   é   feita   da   seguinte   forma:   se   o   arquivo   contiver   a   tag</span></div>
+<div style="position:absolute;left:56.80px;top:589.50px" class="cls_002"><span class="cls_002">“</span><span class="cls_007">&lt;ansTISS:codigoPrestadorNaOperadora&gt;</span><span class="cls_002">” este número é comparado com o código do prestador</span></div>
+<div style="position:absolute;left:56.80px;top:603.30px" class="cls_002"><span class="cls_002">na operadora que está cadastrado, e então é verificado se é o mesmo do usuário que está acessando</span></div>
+<div style="position:absolute;left:56.80px;top:617.10px" class="cls_002"><span class="cls_002">o sistema.</span></div>
+<div style="position:absolute;left:56.80px;top:644.70px" class="cls_002"><span class="cls_002">Se esta tag não estiver presente no arquivo, a validação é feita com o CNPJ (“</span><span class="cls_007">&lt;ansTISS:CNPJ&gt;</span><span class="cls_002">”)</span></div>
+<div style="position:absolute;left:56.80px;top:658.50px" class="cls_002"><span class="cls_002">do  prestador,  e  através  dele  é  realizada  uma  pesquisa  para  retornar  o  código  do  prestador  e</span></div>
+<div style="position:absolute;left:56.80px;top:672.30px" class="cls_002"><span class="cls_002">comparar com o código do usuário que acessa o sistema.</span></div>
+<div style="position:absolute;left:56.80px;top:701.90px" class="cls_005"><span class="cls_005">Validação do Número da ANS da Operadora</span><span class="cls_002">.</span></div>
+<div style="position:absolute;left:56.80px;top:729.50px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">:  O  código  da  ANS  da  operadora  que  está  na  tag  </span><span class="cls_007">“&lt;ansTISS:registroANS&gt;”</span><span class="cls_002"> é</span></div>
+<div style="position:absolute;left:56.80px;top:743.30px" class="cls_002"><span class="cls_002">validado para ver se está cadastrado no sistema.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:852px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="./EspecificacaodasValidacoes_files/background2.jpg" width="595" height="842"></div>
+<div style="position:absolute;left:56.80px;top:48.50px" class="cls_005"><span class="cls_005">Verificação se as Configurações da Singular existem.</span></div>
+<div style="position:absolute;left:56.80px;top:76.10px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Cada singular deve ter suas respectivas configurações cadastradas no sistema, e são</span></div>
+<div style="position:absolute;left:56.80px;top:89.90px" class="cls_002"><span class="cls_002">elas:</span></div>
+<div style="position:absolute;left:84.47px;top:89.90px" class="cls_002"><span class="cls_002">- Número de dígitos do Campo Guia/Senha e Código do Prestador, - Tipos de Guias, -</span></div>
+<div style="position:absolute;left:56.80px;top:103.70px" class="cls_002"><span class="cls_002">Consistência de Beneficiário, - Tipos de Tabelas, - Consistência de Tipo de Despesa para guias de</span></div>
+<div style="position:absolute;left:56.80px;top:117.50px" class="cls_002"><span class="cls_002">Resumo de Internação, - Tipos de Atendimento Não Permitidos, - Validação com Web Service, -</span></div>
+<div style="position:absolute;left:56.80px;top:131.30px" class="cls_002"><span class="cls_002">Consistência de Indicação Clínica,  - Quantidade/Valor  de Procedimentos  e Despesas, - Tipo de</span></div>
+<div style="position:absolute;left:56.80px;top:145.10px" class="cls_002"><span class="cls_002">Guia - Pacotes de Procedimentos, - Validação  do N º de Guia de Solicitação e - Validação do</span></div>
+<div style="position:absolute;left:56.80px;top:158.90px" class="cls_002"><span class="cls_002">Nome do Arquivo.</span></div>
+<div style="position:absolute;left:56.80px;top:188.50px" class="cls_005"><span class="cls_005">Validação da Quantidade de Guias/Contas</span><span class="cls_002">.</span></div>
+<div style="position:absolute;left:56.80px;top:216.10px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Nas configurações é cadastrado um número máximo de guias que o arquivo pode</span></div>
+<div style="position:absolute;left:56.80px;top:229.90px" class="cls_002"><span class="cls_002">conter, então o sistema conta quantas guias/contas o arquivo possui e então compara com o que está</span></div>
+<div style="position:absolute;left:56.80px;top:243.70px" class="cls_002"><span class="cls_002">cadastrado.</span></div>
+<div style="position:absolute;left:56.80px;top:273.30px" class="cls_005"><span class="cls_005">Validação da Tag ANS.</span></div>
+<div style="position:absolute;left:56.80px;top:300.90px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Se a versão do esquema Tiss for superior a 2.02.02, o arquivo xml deve conter as</span></div>
+<div style="position:absolute;left:56.80px;top:314.70px" class="cls_002"><span class="cls_002">tags no padrão “</span><span class="cls_007">&lt;ansTISS:&gt;</span><span class="cls_002">”, e não mais como “</span><span class="cls_007">&lt;ans:&gt;</span><span class="cls_002">”.</span></div>
+<div style="position:absolute;left:56.80px;top:344.30px" class="cls_005"><span class="cls_005">Validação com Schema da TISS</span><span class="cls_002">.</span></div>
+<div style="position:absolute;left:56.80px;top:371.90px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: As tags e seus conteúdos são validados conforme o schema TISS da ANS, de acordo</span></div>
+<div style="position:absolute;left:56.80px;top:385.70px" class="cls_002"><span class="cls_002">com o nome/versão do schema que está localizado na tag “&lt;</span><span class="cls_007">ansTISS:mensagemTISS xmlns&gt;”.</span></div>
+<div style="position:absolute;left:56.80px;top:415.30px" class="cls_005"><span class="cls_005">Validação de CPF</span><span class="cls_002">.</span></div>
+<div style="position:absolute;left:56.80px;top:442.90px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: O CPF contido na tag </span><span class="cls_007">“&lt;ansTISS:CPF&gt;”</span><span class="cls_002"> é validado conforme as regras da Receita</span></div>
+<div style="position:absolute;left:56.80px;top:456.70px" class="cls_002"><span class="cls_002">Federal para dígitos verificadores.</span></div>
+<div style="position:absolute;left:56.80px;top:486.30px" class="cls_005"><span class="cls_005">Validação de CNPJ</span><span class="cls_002">.</span></div>
+<div style="position:absolute;left:56.80px;top:513.90px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">:  O  CNPJ  contido  na  tag  </span><span class="cls_007">“&lt;ansTISS:CNPJ&gt;”</span><span class="cls_002"> é  validado  conforme  as  regras  da</span></div>
+<div style="position:absolute;left:56.80px;top:527.70px" class="cls_002"><span class="cls_002">Receita Federal para dígitos verificadores.</span></div>
+<div style="position:absolute;left:56.80px;top:557.30px" class="cls_005"><span class="cls_005">Validação de CID</span><span class="cls_002">.</span></div>
+<div style="position:absolute;left:56.80px;top:584.90px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: O CID contido na tag </span><span class="cls_007">“&lt;ansTISS:codigoDiagnostico&gt;”</span><span class="cls_002"> é validado conforme o que</span></div>
+<div style="position:absolute;left:56.80px;top:598.70px" class="cls_002"><span class="cls_002">está cadastrado na tabela de CID-10.</span></div>
+<div style="position:absolute;left:56.80px;top:628.30px" class="cls_005"><span class="cls_005">Validação de Tabelas</span><span class="cls_002">.</span></div>
+<div style="position:absolute;left:56.80px;top:655.90px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Para cada despesa contida dentro da tag </span><span class="cls_007">“&lt;ansTISS:outrasDespesas&gt;”</span><span class="cls_002"> se o tipo de</span></div>
+<div style="position:absolute;left:56.80px;top:669.70px" class="cls_002"><span class="cls_002">tabela (</span><span class="cls_007">“&lt;ansTISS:tipoTabela&gt;”</span><span class="cls_002">) for igual a 02 - AMB-92, 05 - Brasíndice, 12 - Simpro, 16 -</span></div>
+<div style="position:absolute;left:56.80px;top:683.50px" class="cls_002"><span class="cls_002">Tuss, o código do procedimento da tag  </span><span class="cls_007">“&lt;ansTISS:codigo&gt;”</span><span class="cls_002"> é validado de acordo com que está</span></div>
+<div style="position:absolute;left:56.80px;top:697.30px" class="cls_002"><span class="cls_002">cadastrado nas tabelas do sistema.</span></div>
+<div style="position:absolute;left:56.80px;top:782.10px" class="cls_005"><span class="cls_005">Validação de Tabelas Não Permitidas.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:1704px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="./EspecificacaodasValidacoes_files/background3.jpg" width="595" height="842"></div>
+<div style="position:absolute;left:56.80px;top:62.30px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">:  Se  a  singular  possuir  a  configuração  de  Tipos  de  Tabela  a  serem  validadas,  o</span></div>
+<div style="position:absolute;left:56.80px;top:76.10px" class="cls_002"><span class="cls_002">sistema irá verificar se dentro do arquivo xml (“</span><span class="cls_007">&lt;ansTISS:tipoTabela&gt;</span><span class="cls_002">”,) possuem apenas itens de</span></div>
+<div style="position:absolute;left:56.80px;top:89.90px" class="cls_002"><span class="cls_002">tabela dos tipos previamente configurados.</span></div>
+<div style="position:absolute;left:56.80px;top:119.50px" class="cls_005"><span class="cls_005">Validação do Código do Prestador</span><span class="cls_002">.</span></div>
+<div style="position:absolute;left:56.80px;top:147.10px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Conforme as configurações cadastradas, é verificado se o código do prestador, que</span></div>
+<div style="position:absolute;left:56.80px;top:160.90px" class="cls_002"><span class="cls_002">está na tag “</span><span class="cls_007">&lt;ansTISS:codigoPrestadorNaOperadora&gt;</span><span class="cls_002">”, possui a quantidade de dígitos que está</span></div>
+<div style="position:absolute;left:56.80px;top:174.70px" class="cls_002"><span class="cls_002">configurado.</span></div>
+<div style="position:absolute;left:56.80px;top:204.30px" class="cls_005"><span class="cls_005">Validação do Código do Beneficiário com 17 dígitos</span><span class="cls_002">.</span></div>
+<div style="position:absolute;left:56.80px;top:231.90px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Se na configuração da singular estiver checado “Sim” para a consistência do código</span></div>
+<div style="position:absolute;left:56.80px;top:245.70px" class="cls_002"><span class="cls_002">do beneficiário, é validado se o número contigo na tag “</span><span class="cls_007">&lt;ansTISS:numeroCarteira&gt;</span><span class="cls_002">” possui 17</span></div>
+<div style="position:absolute;left:56.80px;top:259.50px" class="cls_002"><span class="cls_002">dígitos.</span></div>
+<div style="position:absolute;left:56.80px;top:289.10px" class="cls_005"><span class="cls_005">Validação do Dígito Verificador da Carteira do Beneficiário</span><span class="cls_002">.</span></div>
+<div style="position:absolute;left:56.80px;top:316.70px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Se na configuração da singular estiver checado “Sim” para a consistência do dígito</span></div>
+<div style="position:absolute;left:56.80px;top:330.50px" class="cls_002"><span class="cls_002">verificador   do   código   do   beneficiário,   é   validado   o   número   contigo   na   tag</span></div>
+<div style="position:absolute;left:56.80px;top:344.30px" class="cls_002"><span class="cls_002">“</span><span class="cls_007">&lt;ansTISS:numeroCarteira&gt;</span><span class="cls_002">” conforme as regras da Receita Federal para dígitos verificadores.</span></div>
+<div style="position:absolute;left:56.80px;top:373.90px" class="cls_005"><span class="cls_005">Validação dos Tipos de Atendimento não Permitidos</span><span class="cls_002">.</span></div>
+<div style="position:absolute;left:56.80px;top:401.50px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Se na configuração da singular estiver marcado alguns dos tipos de atendimento (1 -</span></div>
+<div style="position:absolute;left:56.80px;top:415.30px" class="cls_002"><span class="cls_002">Remoção,  2  -  Pequena  Cirurgia,  3  -  Terapias,  4  -  Consultas,  5  -  Exames,  6  -  Atendimento</span></div>
+<div style="position:absolute;left:56.80px;top:429.10px" class="cls_002"><span class="cls_002">Domiciliar,</span></div>
+<div style="position:absolute;left:118.24px;top:429.10px" class="cls_002"><span class="cls_002">7 - SADT Internado, 8 - Quimioterapia, 9 - Radioterapia, 10 - Terapia Renal</span></div>
+<div style="position:absolute;left:56.80px;top:442.90px" class="cls_002"><span class="cls_002">Substitutiva) para não serem permitidos, é validado se no arquivo XML alguma guia contem esse</span></div>
+<div style="position:absolute;left:56.80px;top:456.70px" class="cls_002"><span class="cls_002">(s) tipo (s) de atendimento (s) na tag </span><span class="cls_007">“&lt;ansTISS:tipoAtendimento&gt;”</span><span class="cls_002">.</span></div>
+<div style="position:absolute;left:56.80px;top:486.30px" class="cls_005"><span class="cls_005">Validação de Indicação Clínica para Guias SP_SADT</span><span class="cls_002">.</span></div>
+<div style="position:absolute;left:56.80px;top:513.90px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Para arquivos com tipos de guia igual à “SP_SADT” é necessário que cada guia</span></div>
+<div style="position:absolute;left:56.80px;top:527.70px" class="cls_002"><span class="cls_002">com  tipo  de  atendimento  igual  a</span></div>
+<div style="position:absolute;left:237.68px;top:527.70px" class="cls_002"><span class="cls_002">“02”,</span></div>
+<div style="position:absolute;left:270.26px;top:527.70px" class="cls_002"><span class="cls_002">“03”,</span></div>
+<div style="position:absolute;left:302.84px;top:527.70px" class="cls_002"><span class="cls_002">“08”,</span></div>
+<div style="position:absolute;left:335.42px;top:527.70px" class="cls_002"><span class="cls_002">“09”  ou  “10”  possua  indicação  clínica</span></div>
+<div style="position:absolute;left:56.80px;top:541.50px" class="cls_002"><span class="cls_002">(“</span><span class="cls_007">&lt;ansTISS:indicacaoClinica&gt;</span><span class="cls_002">”).</span></div>
+<div style="position:absolute;left:56.80px;top:571.10px" class="cls_005"><span class="cls_005">Validação de Tipo de Despesa para Guias de Resumo de Internação</span><span class="cls_002">.</span></div>
+<div style="position:absolute;left:56.80px;top:598.70px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Para guias do tipo “Resumo de Internação” deve ser obrigatório (se estiver checado</span></div>
+<div style="position:absolute;left:56.80px;top:612.50px" class="cls_002"><span class="cls_002">“Sim”   para   essa   consistência   nas   configurações)   ao   menos   um   tipo   de   despesa</span></div>
+<div style="position:absolute;left:56.80px;top:626.30px" class="cls_002"><span class="cls_002">(</span><span class="cls_007">“&lt;ansTISS:tipoDespesa&gt;”</span><span class="cls_002">) igual a “5” (diárias) para cada conta do arquivo.</span></div>
+<div style="position:absolute;left:56.80px;top:655.90px" class="cls_005"><span class="cls_005">Validação de Código de Despesa</span><span class="cls_002">.</span></div>
+<div style="position:absolute;left:56.80px;top:683.50px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">:</span></div>
+<div style="position:absolute;left:149.78px;top:683.50px" class="cls_002"><span class="cls_002">Para</span></div>
+<div style="position:absolute;left:191.33px;top:683.50px" class="cls_002"><span class="cls_002">todos</span></div>
+<div style="position:absolute;left:237.60px;top:683.50px" class="cls_002"><span class="cls_002">os</span></div>
+<div style="position:absolute;left:268.58px;top:683.50px" class="cls_002"><span class="cls_002">tipos</span></div>
+<div style="position:absolute;left:312.15px;top:683.50px" class="cls_002"><span class="cls_002">de</span></div>
+<div style="position:absolute;left:343.73px;top:683.50px" class="cls_002"><span class="cls_002">guias</span></div>
+<div style="position:absolute;left:389.32px;top:683.50px" class="cls_002"><span class="cls_002">que</span></div>
+<div style="position:absolute;left:427.00px;top:683.50px" class="cls_002"><span class="cls_002">possuírem</span></div>
+<div style="position:absolute;left:496.56px;top:683.50px" class="cls_002"><span class="cls_002">despesas</span></div>
+<div style="position:absolute;left:56.80px;top:697.30px" class="cls_002"><span class="cls_002">(“</span><span class="cls_007">&lt;ansTISS:outrasDespesas&gt;</span><span class="cls_002">”) é necessário checar se o código da despesa (“</span><span class="cls_007">&lt;ansTISS:codigo&gt;</span><span class="cls_002">”)</span></div>
+<div style="position:absolute;left:56.80px;top:711.10px" class="cls_002"><span class="cls_002">é diferente de “0”.</span></div>
+<div style="position:absolute;left:56.80px;top:768.30px" class="cls_005"><span class="cls_005">Validação de Quantidade e Valores de Procedimentos e Despesas.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:2556px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="./EspecificacaodasValidacoes_files/background4.jpg" width="595" height="842"></div>
+<div style="position:absolute;left:56.80px;top:48.50px" class="cls_006"><span class="cls_006">Especificação:</span><span class="cls_005"> </span><span class="cls_002">Para validar se os itens de quantidade e valores (unitário e total) de procedimentos e</span></div>
+<div style="position:absolute;left:56.80px;top:62.30px" class="cls_002"><span class="cls_002">despesas são maiores que “0” a configuração deve estar marcada como “Sim”.</span></div>
+<div style="position:absolute;left:56.80px;top:89.90px" class="cls_002"><span class="cls_002">No arquivo xml serão validadas se as seguintes tags possuem valores maiores que “0”, ou seja, se</span></div>
+<div style="position:absolute;left:56.80px;top:103.70px" class="cls_002"><span class="cls_002">não são nulos: </span><span class="cls_007">“&lt;ansTISS:quantidadeRealizada&gt;”</span><span class="cls_002">, </span><span class="cls_007">“&lt;ansTISS:valor&gt;”</span><span class="cls_002">, </span><span class="cls_007">“&lt;ansTISS:valorTotal&gt;”</span></div>
+<div style="position:absolute;left:56.80px;top:117.50px" class="cls_002"><span class="cls_002">para</span></div>
+<div style="position:absolute;left:104.88px;top:117.50px" class="cls_002"><span class="cls_002">procedimentos,</span></div>
+<div style="position:absolute;left:205.94px;top:117.50px" class="cls_002"><span class="cls_002">e</span></div>
+<div style="position:absolute;left:238.80px;top:117.50px" class="cls_007"><span class="cls_007">“&lt;ansTISS:quantidade&gt;”</span><span class="cls_002">,</span></div>
+<div style="position:absolute;left:396.20px;top:117.50px" class="cls_007"><span class="cls_007">“&lt;ansTISS:valorUnitario&gt;”</span><span class="cls_002">,</span></div>
+<div style="position:absolute;left:56.80px;top:131.30px" class="cls_007"><span class="cls_007">“&lt;ansTISS:valorTotal&gt;”</span><span class="cls_002"> para despesas.</span></div>
+<div style="position:absolute;left:56.80px;top:160.90px" class="cls_005"><span class="cls_005">Validação de Tipos de Guias de Pacotes.</span></div>
+<div style="position:absolute;left:56.80px;top:188.50px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">:   Se   a   configuração  de  tipos   de  guias  de   pacotes  de   procedimentos</span></div>
+<div style="position:absolute;left:56.80px;top:202.30px" class="cls_002"><span class="cls_002">(“</span><span class="cls_007">&lt;ansTISS:tipoTabela&gt;</span><span class="cls_002">98&lt;/ansTISS:tipoTabela&gt;”) estiver habilitada como “sim”, no arquivo xml</span></div>
+<div style="position:absolute;left:56.80px;top:216.10px" class="cls_002"><span class="cls_002">serão validados se os tipos de guias dos pacotes (cadastrados previamente)  são do mesmo tipo da</span></div>
+<div style="position:absolute;left:56.80px;top:229.90px" class="cls_002"><span class="cls_002">guia   principal   do   arquivo.   Se   por   exemplo:   o   tipo   de   guia   do   xml   for</span></div>
+<div style="position:absolute;left:56.80px;top:243.70px" class="cls_002"><span class="cls_002">“</span><span class="cls_007">&lt;ansTISS:guiaResumoInternacao&gt;</span><span class="cls_002">”,  os  tipos  de  guia  dos  pacotes  deverão  ser  resumo  de</span></div>
+<div style="position:absolute;left:56.80px;top:257.50px" class="cls_002"><span class="cls_002">internação.</span></div>
+<div style="position:absolute;left:56.80px;top:287.10px" class="cls_005"><span class="cls_005">Validação de Guia de Solicitação com a Senha de Autorização.</span></div>
+<div style="position:absolute;left:56.80px;top:314.70px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Para guias do tipo “Resumo de Internação” deve ser obrigatório (se estiver checado</span></div>
+<div style="position:absolute;left:56.80px;top:328.50px" class="cls_002"><span class="cls_002">“Sim”   para   essa   consistência   nas   configurações)   que   a   guia   de   solicitação</span></div>
+<div style="position:absolute;left:56.80px;top:342.30px" class="cls_002"><span class="cls_002">(“</span><span class="cls_007">&lt;ansTISS:numeroGuiaSolicitacao&gt;</span><span class="cls_002">”)</span></div>
+<div style="position:absolute;left:274.18px;top:342.30px" class="cls_002"><span class="cls_002">seja</span></div>
+<div style="position:absolute;left:317.33px;top:342.30px" class="cls_002"><span class="cls_002">igual</span></div>
+<div style="position:absolute;left:365.81px;top:342.30px" class="cls_002"><span class="cls_002">à</span></div>
+<div style="position:absolute;left:395.58px;top:342.30px" class="cls_002"><span class="cls_002">senha</span></div>
+<div style="position:absolute;left:447.36px;top:342.30px" class="cls_002"><span class="cls_002">de</span></div>
+<div style="position:absolute;left:483.14px;top:342.30px" class="cls_002"><span class="cls_002">autorização</span></div>
+<div style="position:absolute;left:56.80px;top:356.10px" class="cls_002"><span class="cls_002">(“</span><span class="cls_007">&lt;ansTISS:senhaAutorizacao&gt;</span><span class="cls_002">”).</span></div>
+<div style="position:absolute;left:56.80px;top:385.70px" class="cls_005"><span class="cls_005">Validação com Web Service da Singular</span><span class="cls_002">.</span></div>
+<div style="position:absolute;left:56.80px;top:413.30px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Se a singular optar por integrar o xTiss com seu sistema de gestão através de um</span></div>
+<div style="position:absolute;left:56.80px;top:427.10px" class="cls_002"><span class="cls_002">Web Service, é necessário marcar a configuração como “Sim”.</span></div>
+<div style="position:absolute;left:56.80px;top:440.90px" class="cls_002"><span class="cls_002">Para que todo esse processo funcione,  a singular precisa ter desenvolvido um Web Service nos</span></div>
+<div style="position:absolute;left:56.80px;top:454.70px" class="cls_002"><span class="cls_002">padrões definidos pela CloudMed.</span></div>
+<div style="position:absolute;left:56.80px;top:482.30px" class="cls_002"><span class="cls_002">Após o arquivo xml passar por todas as validações, o Web Service é chamado para fazer validações</span></div>
+<div style="position:absolute;left:56.80px;top:496.10px" class="cls_002"><span class="cls_002">específicas  das  regras  de  negócio  da  singular.  Se  o  Web  Service  retornar  algum  tipo  de  erro,</span></div>
+<div style="position:absolute;left:56.80px;top:509.90px" class="cls_002"><span class="cls_002">mensagens informativas serão mostradas ao prestador para que o mesmo possa corrigir o arquivo e</span></div>
+<div style="position:absolute;left:56.80px;top:523.70px" class="cls_002"><span class="cls_002">tentar enviar novamente.</span></div>
+</div>
+
+
+
+</body></html>
