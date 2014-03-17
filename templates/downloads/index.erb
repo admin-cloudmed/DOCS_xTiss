@@ -35,13 +35,116 @@
 <div id ="validation_specifications" > &nbsp </div>
 <h2 id="validation_specifications_inner"><%= I18n.t("downloads.index.validation_specifications.item_1") %></h2>
 <div class="row-fluid">
-   <center><img src="/img/downloads/espvalidacoes.png"  /></center>
-   <br/>
-   <p align="right" style="font-weight:bold;font-size:small;margin-right:2cm;"><%= I18n.t("downloads.index.validation_specifications.item_3") %></p>
-   <br/><br/>
-   <p style="text-indent: 3em; text-align: justify;"> <%= I18n.t("downloads.index.validation_specifications.item_2") %></p>
-   <br/><br/>
-	<center><object  data="/img/Downloads/EspecificacaodasValidacoes.html" type="text/html" style="width:90%; height:500px;" frameborder="0"></object></center>
+	<center><img src="/img/downloads/espvalidacoes.png"  /></center>
+	<br/>
+	<p align="right" style="font-weight:bold;font-size:small;margin-right:2cm;"><%= I18n.t("downloads.index.validation_specifications.item_3") %></p>
+	<br/><br/>
+	<p style="text-indent: 3em; text-align: justify;"> <%= I18n.t("downloads.index.validation_specifications.item_2") %></p>
+	<br/><br/>  
+	<div style="width:90%; height:500px;;overflow:scroll;float:right">
+		<style type="text/css">
+		<!--
+		span.cls_003{font-family:Arial,serif;font-size:16.1px;color:rgb(0,127,0);font-weight:bold;font-style:normal;text-decoration: none}
+		div.cls_003{font-family:Arial,serif;font-size:16.1px;color:rgb(0,127,0);font-weight:bold;font-style:normal;text-decoration: none}
+		span.cls_004{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,127);font-weight:bold;font-style:normal;text-decoration: none}
+		div.cls_004{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,127);font-weight:bold;font-style:normal;text-decoration: none}
+		span.cls_005{font-family:Times,serif;font-size:12.1px;color:rgb(255,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+		div.cls_005{font-family:Times,serif;font-size:12.1px;color:rgb(255,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+		span.cls_006{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+		div.cls_006{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+		span.cls_002{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+		div.cls_002{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+		span.cls_007{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+		div.cls_007{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+		-->
+		</style>
+		<div style="left:98.60px;top:48.30px" class="cls_003"><span class="cls_003">Especificação das Regras de Consistência do xTiss.</span></div>
+		<div style="left:56.80px;top:94.50px" class="cls_004"><span class="cls_004">* As especificações das validações estão na mesma ordem em que são executadas no sistema. *</span></div>
+		<br/>
+		<div style="left:56.80px;top:137.90px" class="cls_005"><span class="cls_005">Validação da Extensão do Arquivo.</span></div>
+		<div style="left:56.80px;top:165.50px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: A primeira validação feita é se o arquivo selecionado possui a extensão “.zip”.</span></div>
+		<br/>
+		<div style="left:56.80px;top:195.10px" class="cls_005"><span class="cls_005">Validação de Hash</span><span class="cls_002">.</span></div>
+		<div style="left:56.80px;top:222.70px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: O sistema calcula o hash do arquivo e verifica se é o mesmo que está contido na tag “&lt;ansTISS:hash&gt;”.</span></div>
+		<br/>
+		<div style="left:56.80px;top:266.10px" class="cls_005"><span class="cls_005">Validação de Nome do Arquivo</span><span class="cls_002">.</span></div>
+		<div style="left:56.80px;top:293.70px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Segundo normas da ANS, o nome do arquivo xml deve seguir o seguinte padrão: número seqüencial de 20 dígitos + “_” + hash do arquivo, como por exemplo o nome à seguir: 00000000000000024879_cf28a11853d21218f975c8c086d9c42c.xml.</span></div>
+		<br/>
+		<div style="left:56.80px;top:350.90px" class="cls_005"><span class="cls_005">Validação de Arquivo já Enviado.</span></div>
+		<div style="left:56.80px;top:378.50px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Com base no hash do arquivo é verificado se já existe um arquivo gravado no banco de dados com aquele mesmo hash. Se sim, o arquivo já foi enviado com sucesso anteriormente e não pode ser enviado de novo.</span></div>
+		<br/>
+		<div style="left:56.80px;top:435.70px" class="cls_005"><span class="cls_005">Validação de Configuração do Schema</span><span class="cls_002">.</span></div>
+		<div style="left:56.80px;top:463.30px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Verifica se o nome do schema está cadastrado nas configurações, e se a data de vigência está dentro do período de validade estabelecido.</span></div>
+		<br/>
+		<div style="left:56.80px;top:506.70px" class="cls_005"><span class="cls_005">Verificação de Usuário “Logado”</span><span class="cls_002">.</span></div>
+		<div style="left:56.80px;top:534.30px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Para enviar arquivos, o usuário (prestador) “logado” no sistema deve ser o mesmo prestador de origem do arquivo. Esta   verificação   é   feita   da   seguinte   forma:   se   o   arquivo   contiver   a   tag “</span><span class="cls_007">&lt;ansTISS:codigoPrestadorNaOperadora&gt;</span><span class="cls_002">” este número é comparado com o código do prestador na operadora que está cadastrado, e então é verificado se é o mesmo do usuário que está acessando o sistema. Se esta tag não estiver presente no arquivo, a validação é feita com o CNPJ (“</span><span class="cls_007">&lt;ansTISS:CNPJ&gt; do  prestador,  e  através  dele  é  realizada  uma  pesquisa  para  retornar  o  código  do  prestador  e comparar com o código do usuário que acessa o sistema.</span></div>
+		<br/>
+		<div style="left:56.80px;top:701.90px" class="cls_005"><span class="cls_005">Validação do Número da ANS da Operadora</span><span class="cls_002">.</span></div>
+		<div style="left:56.80px;top:729.50px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">:  O  código  da  ANS  da  operadora  que  está  na  tag  </span><span class="cls_007">“&lt;ansTISS:registroANS&gt;”</span><span class="cls_002"> é validado para ver se está cadastrado no sistema.</span></div>
+		<br/>
+		<div style="left:56.80px;top:48.50px" class="cls_005"><span class="cls_005">Verificação se as Configurações da Singular existem.</span></div>
+		<div style="left:56.80px;top:76.10px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Cada singular deve ter suas respectivas configurações cadastradas no sistema, e são elas:- Número de dígitos do Campo Guia/Senha e Código do Prestador, - Tipos de Guias, - Consistência de Beneficiário, - Tipos de Tabelas, - Consistência de Tipo de Despesa para guias de Resumo de Internação, - Tipos de Atendimento Não Permitidos, - Validação com Web Service, - Consistência de Indicação Clínica,  - Quantidade/Valor  de Procedimentos  e Despesas, - Tipo de Guia - Pacotes de Procedimentos, - Validação  do N º de Guia de Solicitação e - Validação do Nome do Arquivo.</span></div>
+		<br/>
+		<div style="left:56.80px;top:188.50px" class="cls_005"><span class="cls_005">Validação da Quantidade de Guias/Contas</span><span class="cls_002">.</span></div>
+		<div style="left:56.80px;top:216.10px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Nas configurações é cadastrado um número máximo de guias que o arquivo pode conter, então o sistema conta quantas guias/contas o arquivo possui e então compara com o que está cadastrado.</span></div>
+		<br/>
+		<div style="left:56.80px;top:273.30px" class="cls_005"><span class="cls_005">Validação da Tag ANS.</span></div>
+		<div style="left:56.80px;top:300.90px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Se a versão do esquema Tiss for superior a 2.02.02, o arquivo xml deve conter as tags no padrão “</span><span class="cls_007">&lt;ansTISS:&gt;</span><span class="cls_002">”, e não mais como “</span><span class="cls_007">&lt;ans:&gt;</span><span class="cls_002">”.</span></div>
+		<br/>
+		<div style="left:56.80px;top:344.30px" class="cls_005"><span class="cls_005">Validação com Schema da TISS</span><span class="cls_002">.</span></div>
+		<div style="left:56.80px;top:371.90px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: As tags e seus conteúdos são validados conforme o schema TISS da ANS, de acordo</span></div>
+		<div style="left:56.80px;top:385.70px" class="cls_002"><span class="cls_002">com o nome/versão do schema que está localizado na tag “&lt;</span><span class="cls_007">ansTISS:mensagemTISS xmlns&gt;”.</span></div>
+		<br/>
+		<div style="left:56.80px;top:415.30px" class="cls_005"><span class="cls_005">Validação de CPF</span><span class="cls_002">.</span></div>
+		<div style="left:56.80px;top:442.90px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: O CPF contido na tag </span><span class="cls_007">“&lt;ansTISS:CPF&gt;”</span><span class="cls_002"> é validado conforme as regras da Receita Federal para dígitos verificadores.</span></div>
+		<br/>
+		<div style="left:56.80px;top:486.30px" class="cls_005"><span class="cls_005">Validação de CNPJ</span><span class="cls_002">.</span></div>
+		<div style="left:56.80px;top:513.90px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">:  O  CNPJ  contido  na  tag  </span><span class="cls_007">“&lt;ansTISS:CNPJ&gt;”</span><span class="cls_002"> é  validado  conforme  as  regras  da Receita Federal para dígitos verificadores.</span></div>
+		<br/>
+		<div style="left:56.80px;top:557.30px" class="cls_005"><span class="cls_005">Validação de CID</span><span class="cls_002">.</span></div>
+		<div style="left:56.80px;top:584.90px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: O CID contido na tag </span><span class="cls_007">“&lt;ansTISS:codigoDiagnostico&gt;”</span><span class="cls_002"> é validado conforme o que está cadastrado na tabela de CID-10.</span></div>
+		<br/>
+		<div style="left:56.80px;top:628.30px" class="cls_005"><span class="cls_005">Validação de Tabelas</span><span class="cls_002">.</span></div>
+		<div style="left:56.80px;top:655.90px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Para cada despesa contida dentro da tag </span><span class="cls_007">“&lt;ansTISS:outrasDespesas&gt;”</span><span class="cls_002"> se o tipo de tabela (</span><span class="cls_007">“&lt;ansTISS:tipoTabela&gt;”</span><span class="cls_002">) for igual a 02 - AMB-92, 05 - Brasíndice, 12 - Simpro, 16 - Tuss, o código do procedimento da tag  </span><span class="cls_007">“&lt;ansTISS:codigo&gt;”</span><span class="cls_002"> é validado de acordo com que está cadastrado nas tabelas do sistema.</span></div>
+		<br/>
+		<div style="left:56.80px;top:782.10px" class="cls_005"><span class="cls_005">Validação de Tabelas Não Permitidas.</span></div>
+		<div style="left:56.80px;top:62.30px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">:  Se  a  singular  possuir  a  configuração  de  Tipos  de  Tabela  a  serem  validadas,  o sistema irá verificar se dentro do arquivo xml (“</span><span class="cls_007">&lt;ansTISS:tipoTabela&gt;</span><span class="cls_002">”,) possuem apenas itens de tabela dos tipos previamente configurados.</span></div>
+		<br/>
+		<div style="left:56.80px;top:119.50px" class="cls_005"><span class="cls_005">Validação do Código do Prestador</span><span class="cls_002">.</span></div>
+		<div style="left:56.80px;top:147.10px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Conforme as configurações cadastradas, é verificado se o código do prestador, que está na tag “</span><span class="cls_007">&lt;ansTISS:codigoPrestadorNaOperadora&gt;</span><span class="cls_002">”, possui a quantidade de dígitos que está configurado.</span></div>
+		<br/>
+		<div style="left:56.80px;top:204.30px" class="cls_005"><span class="cls_005">Validação do Código do Beneficiário com 17 dígitos</span><span class="cls_002">.</span></div>
+		<div style="left:56.80px;top:231.90px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Se na configuração da singular estiver checado “Sim” para a consistência do códigodo beneficiário, é validado se o número contigo na tag “</span><span class="cls_007">&lt;ansTISS:numeroCarteira&gt;</span><span class="cls_002">” possui 17 dígitos.</span></div>
+		<br/>
+		<div style="left:56.80px;top:289.10px" class="cls_005"><span class="cls_005">Validação do Dígito Verificador da Carteira do Beneficiário</span><span class="cls_002">.</span></div>
+		<div style="left:56.80px;top:316.70px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Se na configuração da singular estiver checado “Sim” para a consistência do dígito verificador   do   código   do   beneficiário,   é   validado   o   número   contigo   na   tag “</span><span class="cls_007">&lt;ansTISS:numeroCarteira&gt;</span><span class="cls_002">” conforme as regras da Receita Federal para dígitos verificadores.</span></div>
+		<br/>
+		<div style="left:56.80px;top:373.90px" class="cls_005"><span class="cls_005">Validação dos Tipos de Atendimento não Permitidos</span><span class="cls_002">.</span></div>
+		<div style="left:56.80px;top:401.50px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Se na configuração da singular estiver marcado alguns dos tipos de atendimento (1 - Remoção,  2  -  Pequena  Cirurgia,  3  -  Terapias,  4  -  Consultas,  5  -  Exames,  6  -  Atendimento Domiciliar, 7 - SADT Internado, 8 - Quimioterapia, 9 - Radioterapia, 10 - Terapia Renal Substitutiva) para não serem permitidos, é validado se no arquivo XML alguma guia contem esse (s) tipo (s) de atendimento (s) na tag </span><span class="cls_007">“&lt;ansTISS:tipoAtendimento&gt;”</span><span class="cls_002">.</span></div>
+		<br/>
+		<div style="left:56.80px;top:486.30px" class="cls_005"><span class="cls_005">Validação de Indicação Clínica para Guias SP_SADT</span><span class="cls_002">.</span></div>
+		<div style="left:56.80px;top:513.90px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Para arquivos com tipos de guia igual à “SP_SADT” é necessário que cada guia com  tipo  de  atendimento  igual  a “02”, “03”,“08”, “09”  ou  “10”  possua  indicação  clínica (“</span><span class="cls_007">&lt;ansTISS:indicacaoClinica&gt;</span><span class="cls_002">”).</span></div>
+		<br/>
+		<div style="left:56.80px;top:571.10px" class="cls_005"><span class="cls_005">Validação de Tipo de Despesa para Guias de Resumo de Internação</span><span class="cls_002">.</span></div>
+		<div style="left:56.80px;top:598.70px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Para guias do tipo “Resumo de Internação” deve ser obrigatório (se estiver checado</span></div>
+		<div style="left:56.80px;top:612.50px" class="cls_002"><span class="cls_002">“Sim”   para   essa   consistência   nas   configurações)   ao   menos   um   tipo   de   despesa</span></div>
+		<div style="left:56.80px;top:626.30px" class="cls_002"><span class="cls_002">(</span><span class="cls_007">“&lt;ansTISS:tipoDespesa&gt;”</span><span class="cls_002">) igual a “5” (diárias) para cada conta do arquivo.</span></div>
+		<br/>
+		<div style="left:56.80px;top:655.90px" class="cls_005"><span class="cls_005">Validação de Código de Despesa</span><span class="cls_002">.</span></div>
+		<div style="left:56.80px;top:683.50px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Para todos >os tipos de guias que possuírem >despesas (“</span><span class="cls_007">&lt;ansTISS:outrasDespesas&gt;</span><span class="cls_002">”) é necessário checar se o código da despesa (“</span><span class="cls_007">&lt;ansTISS:codigo&gt;</span><span class="cls_002">”) é diferente de “0”.</span></div>
+		<br/>
+		<div style="left:56.80px;top:768.30px" class="cls_005"><span class="cls_005">Validação de Quantidade e Valores de Procedimentos e Despesas.</span></div>
+		<div style="left:56.80px;top:48.50px" class="cls_006"><span class="cls_006">Especificação:</span><span class="cls_005"> </span><span class="cls_002">Para validar se os itens de quantidade e valores (unitário e total) de procedimentos e despesas são maiores que “0” a configuração deve estar marcada como “Sim”. No arquivo xml serão validadas se as seguintes tags possuem valores maiores que “0”, ou seja, se não são nulos: </span><span class="cls_007">“&lt;ansTISS:quantidadeRealizada&gt;”</span><span class="cls_002">, </span><span class="cls_007">“&lt;ansTISS:valor&gt;”</span><span class="cls_002">, </span><span class="cls_007">“&lt;ansTISS:valorTotal&gt;” para procedimentos, e “&lt;ansTISS:quantidade&gt;”</span><span class="cls_002">, “&lt;ansTISS:valorUnitario&gt;”</span><span class="cls_002">, “&lt;ansTISS:valorTotal&gt;”</span><span class="cls_002"> para despesas.</span></div>
+		<br/>
+		<div style="left:56.80px;top:160.90px" class="cls_005"><span class="cls_005">Validação de Tipos de Guias de Pacotes.</span></div>
+		<div style="left:56.80px;top:188.50px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">:   Se   a   configuração  de  tipos   de  guias  de   pacotes  de   procedimentos (“</span><span class="cls_007">&lt;ansTISS:tipoTabela&gt;</span><span class="cls_002">98&lt;/ansTISS:tipoTabela&gt;”) estiver habilitada como “sim”, no arquivo xml serão validados se os tipos de guias dos pacotes (cadastrados previamente)  são do mesmo tipo da guia   principal   do   arquivo.   Se   por   exemplo:   o   tipo   de   guia   do   xml   for <span class="cls_007">&lt;ansTISS:guiaResumoInternacao&gt;</span><span class="cls_002">”,  os  tipos  de  guia  dos  pacotes  deverão  ser  resumo  de internação.</span></div>
+		<br/>
+		<div style="left:56.80px;top:287.10px" class="cls_005"><span class="cls_005">Validação de Guia de Solicitação com a Senha de Autorização.</span></div>
+		<div style="left:56.80px;top:314.70px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Para guias do tipo “Resumo de Internação” deve ser obrigatório (se estiver checado “Sim”   para   essa   consistência   nas   configurações)   que   a   guia   de   solicitação (“</span><span class="cls_007">&lt;ansTISS:numeroGuiaSolicitacao&gt;</span><span class="cls_002">”) seja igual à senha de autorização (“</span><span class="cls_007">&lt;ansTISS:senhaAutorizacao&gt;</span><span class="cls_002">”).</span></div>
+		<br/>
+		<div style="left:56.80px;top:385.70px" class="cls_005"><span class="cls_005">Validação com Web Service da Singular</span><span class="cls_002">.</span></div>
+		<div style="left:56.80px;top:413.30px" class="cls_006"><span class="cls_006">Especificação</span><span class="cls_002">: Se a singular optar por integrar o xTiss com seu sistema de gestão através de um Web Service, é necessário marcar a configuração como “Sim”.Para que todo esse processo funcione,  a singular precisa ter desenvolvido um Web Service nos padrões definidos pela CloudMed. Após o arquivo xml passar por todas as validações, o Web Service é chamado para fazer validações específicas  das  regras  de  negócio  da  singular.  Se  o  Web  Service  retornar algum  tipo  de  erro, mensagens informativas serão mostradas ao prestador para que o mesmo possa corrigir o arquivo e tentar enviar novamente.</span></div>
+	</div>
 </div>
 <br/><br/><br/><br/>
 
@@ -55,7 +158,248 @@
    <br/><br/>
    <p style="text-indent: 3em; text-align: justify;"> <%= I18n.t("downloads.index.error_specifications.item_2") %></p>
    <br/><br/>
-	<center><object data="/img/Downloads/descricaoErrosXtiss.html" type="text/html" style="width:90%; height:500px;" ></object></center>
+	<!--<center><iframe  src="/img/Downloads/descricaoErrosXtiss.html" style="width:90%; height:500px;" frameborder="0"></iframe></center>-->
+	<div style="width:90%; height:500px;;overflow:scroll;float:right">		
+				<style type="text/css">
+		<!--
+		span.zls_002{font-family:"Cambria Bold",serif;font-size:15.1px;color:rgb(0,127,0);font-weight:bold;font-style:normal;text-decoration: none}
+		div.zls_002{font-family:"Cambria Bold",serif;font-size:15.1px;color:rgb(0,127,0);font-weight:bold;font-style:normal;text-decoration: none}
+		span.zls_003{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+		div.zls_003{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+		span.zls_004{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+		div.zls_004{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+		span.zls_005{font-family:Times,serif;font-size:12.1px;color:rgb(255,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+		div.zls_005{font-family:Times,serif;font-size:12.1px;color:rgb(255,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+		span.zls_006{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: underline}
+		div.zls_006{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+		span.zls_007{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: underline}
+		div.zls_007{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+		-->
+		</style>
+		<div style="left:56.80px;top:41.80px" class="zls_002"><span class="zls_002">Erros de validação de arquivos no xTiss e suas respectivas descrições.</span></div>
+		<div style="left:56.80px;top:73.20px" class="zls_003"><span class="zls_003">E1</span><span class="zls_004"> - </span><span class="zls_005">Selecione um arquivo xml compactado para enviar.</span></div>
+		<div style="left:56.80px;top:100.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O prestador deve selecionar um arquivo compactado (extensão .zip) antes de clicar no botão ‘Validar Arquivo’ para enviar o arquivo.</span></div>
+		<br/>
+		<div style="left:56.80px;top:144.20px" class="zls_003"><span class="zls_003">E2</span><span class="zls_004"> - </span><span class="zls_005">O arquivo deve vir com a extensão zip.</span></div>
+		<div style="left:56.80px;top:171.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">:  O  arquivo  selecionado  pelo  prestador  para  o  envio  deve  estar  na  extensão  “.zip”(compactado).</span></div>
+		<br/>
+		<div style="left:56.80px;top:215.20px" class="zls_003"><span class="zls_003">E4</span><span class="zls_004"> - </span><span class="zls_005">O arquivo compactado não pode conter mais de um arquivo xml.</span></div>
+		<div style="left:56.80px;top:242.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: Dentro do arquivo compactado (extensão .zip) selecionado pelo Prestador, deve haver apenas UM arquivo xml.</span></div>
+		<br/>
+		<div style="left:56.80px;top:286.20px" class="zls_003"><span class="zls_003">V1</span><span class="zls_004"> - </span><span class="zls_005">Arquivo xml não possui a tag "ans:destino".</span></div>
+		<div style="left:56.80px;top:313.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O arquivo xml deve conter a tag ”ans:destino” para a validação do código da ANS do arquivo.</span></div>
+		<br/>
+		<div style="left:56.80px;top:357.20px" class="zls_003"><span class="zls_003">V3/V8/V16</span><span class="zls_004"> - </span><span class="zls_005">Arquivo xml não possui a tag "ans:mensagemTISS".</span></div>
+		<div style="left:56.80px;top:384.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">:  O  arquivo  xml  deve  conter  a  tag  “ans:mensagemTISS”  para  a  validação  do  hash  eschema.</span></div>
+		<br/>
+		<div style="left:56.80px;top:428.20px" class="zls_003"><span class="zls_003">V4</span><span class="zls_004"> - </span><span class="zls_005">Hash do arquivo não confere com o hash original.</span></div>
+		<div style="left:56.80px;top:455.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">:  Hash  gerado  pelo  xTiss  não  confere  com  o  hash  apresentado  na  tag  “ans:hash”  do arquivo. O arquivo pode ter sido alterado após sua produção, ou, o padrão utilizado para gerar o hash no software do prestador está incorreto (o padrão de validação de Hash utilizado pelo xTiss é o MD5 - ISO-8859-1).</span></div>
+		<br/>
+		<div style="left:56.80px;top:526.80px" class="zls_003"><span class="zls_003">V5</span><span class="zls_004"> - </span><span class="zls_005">Este arquivo já foi enviado anteriormente.</span></div>
+		<div style="left:56.80px;top:554.40px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">:  O  arquivo  que  o  prestador  está  tentando  enviar  já  foi  postado  anteriormente.  Um arquivo validado com sucesso só pode ser enviado uma vez no xTiss.</span></div>
+		<br/>
+		<div style="left:56.80px;top:597.80px" class="zls_003"><span class="zls_003">V6</span><span class="zls_004"> - </span><span class="zls_005">Versão do Schema ANS (nº versão) não cadastrado no sistema.</span></div>
+		<div style="left:56.80px;top:625.40px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">:  A  versão  do  schema  TISS  do  arquivo  xml  não  está  cadastrado  no  xTiss.  Entre  em contato com o administrador do sistema para que o cadastro seja efetuado.</span></div>
+		<br/>
+		<div style="left:56.80px;top:669.80px" class="zls_003"><span class="zls_003">V7</span><span class="zls_004"> -  </span><span class="zls_005">A  versão  do  schema  não  é  válida,  pois  não  se  encontra  dentro  do  período  máximo  de usabilidade.</span></div>
+		<div style="left:56.80px;top:711.20px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">:  A  versão  do  schema  TISS  do  arquivo  xml  não  é  valida,  pois  de  acordo  com  as configurações  da  singular  o  seu  prazo  de  validade  está  ultrapassado.  Os  arquivos  devem  ser enviados em uma versão mais recente.</span></div>
+		<br/>
+		<div style="left:56.80px;top:782.20px" class="zls_003"><span class="zls_003">V9</span><span class="zls_004"> - </span><span class="zls_005">Este arquivo não pertence ao hospital cujo seu login está relacionado.</span></div>
+		<div style="left:56.80px;top:55.60px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O arquivo que o prestador está tentando enviar pode não ser do seu hospital/clínica de origem.  Possíveis  problemas:  -  Relacionamento  entre  login  e  registro  do  prestador  incorreto;  - Código do prestador na operadora do arquivo xml não existe no xTiss ou está diferente do cadastro existente; - CNPJ do prestador do arquivo xml não existe no xTiss ou está diferente do cadastro existente.</span></div>
+		<br/>
+		<div style="left:56.80px;top:140.40px" class="zls_003"><span class="zls_003">V10</span><span class="zls_004"> - </span><span class="zls_005">Arquivo xml não possui a tag "ans:origem".</span></div>
+		<div style="left:56.80px;top:168.00px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O arquivo xml deve conter a tag ”ans:origem” para a validação de prestador enviando arquivo de seu hospital/clínica.</span></div>
+		<br/>
+		<div style="left:56.80px;top:211.40px" class="zls_003"><span class="zls_003">V11</span><span class="zls_004"> - </span><span class="zls_005">O código da ANS (código) não está cadastrado no sistema.</span></div>
+		<div style="left:56.80px;top:239.00px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O código da ANS apresentado na tag “ans:registroANS” do arquivo não está cadastrado no xTiss. Possíveis problemas: código ANS do arquivo xml está incorreto, ou, código não existente no xTiss: entre em contato com o administrador do sistema para que o cadastro seja efetuado.</span></div>
+		<br/>
+		<div style="left:56.80px;top:296.20px" class="zls_003"><span class="zls_003">V12</span><span class="zls_004"> - </span><span class="zls_005">Arquivo xml não possui a tag "ans:registroANS".</span></div>
+		<div style="left:56.80px;top:323.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O arquivo xml deve conter a tag “ans:registroANS” para a validação do código da ANS do arquivo.</span></div>
+		<br/>
+		<div style="left:56.80px;top:367.20px" class="zls_003"><span class="zls_003">V13/V31/V37</span><span class="zls_004"> - </span><span class="zls_005">Arquivo xml não possui a tag "ans:guiaFaturamento".</span></div>
+		<div style="left:56.80px;top:394.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O arquivo xml deve conter a tag “ans:guiaFaturamento” para a validação do código da ANS do arquivo e dos números de guias/senhas do arquivo.</span></div>
+		<br/>
+		<div style="left:56.80px;top:438.20px" class="zls_003"><span class="zls_003">V14</span><span class="zls_004"> - </span><span class="zls_005">Configuração de Tipos de Guias não cadastrada para essa singular.</span></div>
+		<div style="left:56.80px;top:465.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O cadastro da configuração de “Tipos de Guias” é obrigatório para a singular. Entre em contato com o administrador do sistema para que o cadastro seja efetuado.</span></div>
+		<br/>
+		<div style="left:56.80px;top:509.20px" class="zls_003"><span class="zls_003">V15</span><span class="zls_004"> - </span><span class="zls_005">Arquivo XML não está na estrutura correta. Detalhes: (erro).</span></div>
+		<div style="left:56.80px;top:536.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: Arquivo xml não se encontra na estrutura correta para a validação de schema TISS.</span></div>
+		<br/>
+		<div style="left:56.80px;top:566.40px" class="zls_003"><span class="zls_003">V17</span><span class="zls_004"> - </span><span class="zls_005">Arquivo com dados inválidos em (tag do xml), na linha: (nº linha).</span></div>
+		<div style="left:56.80px;top:594.00px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: Erro na validação com o schema da TISS: na linha “x” existe um dado fora do padrão esperado pelo schema TISS. Veja na especificação do esquema o tipo de dado que deve ser enviado na tag em questão.</span></div>
+		<br/>
+		<div style="left:56.80px;top:651.20px" class="zls_003"><span class="zls_003">V18</span><span class="zls_004"> - </span><span class="zls_005">O Arquivo xml contém mais de um tipo de conta diferente.</span></div>
+		<div style="left:56.80px;top:678.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O arquivo xml não pode conter mais de um tipo de conta (sp/sadt, internação, honorário, consulta) diferente dentro do mesmo arquivo.</span></div>
+		<br/>
+		<div style="left:56.80px;top:763.60px" class="zls_003"><span class="zls_003">V19</span><span class="zls_004"> - </span><span class="zls_005">O arquivo XML contém uma quantidade de contas maior que a permitida. Número de contas encontrado: (nº). Número máximo de contas permitido: (nº configurado).</span></div>
+		<div style="left:56.80px;top:55.60px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O número de contas do arquivo xml é superior ao número máximo de contas que foi configurado pela singular no xTiss.</span></div>
+		<br/>
+		<div style="left:56.80px;top:99.00px" class="zls_003"><span class="zls_003">V20</span><span class="zls_004"> - </span><span class="zls_005">O Arquivo XML não contém nenhum tipo de conta.</span></div>
+		<div style="left:56.80px;top:126.60px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O arquivo xml deve conter ao menos uma conta para ser validado.</span></div>
+		<br/>
+		<div style="left:56.80px;top:156.20px" class="zls_003"><span class="zls_003">V21</span><span class="zls_004"> - </span><span class="zls_005">O número de CPF (nº) não é válido.</span></div>
+		<div style="left:56.80px;top:183.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O número do CPF “x” não é válido de acordo com os padrões de verificação nacional.</span></div>
+		<br/>
+		<div style="left:56.80px;top:213.40px" class="zls_003"><span class="zls_003">V22</span><span class="zls_004"> - </span><span class="zls_005">Arquivo xml não possui a tag "ans:cpf".</span></div>
+		<div style="left:56.80px;top:241.00px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O arquivo xml deve conter a tag “ans:cpf” para a validação dos números de CPF  do arquivo.</span></div>
+		<br/>
+		<div style="left:56.80px;top:284.40px" class="zls_003"><span class="zls_003">V23</span><span class="zls_004"> - </span><span class="zls_005">O número de CNPJ (nº) não é válido.</span></div>
+		<div style="left:56.80px;top:312.00px" class="zls_006"><span class="zls_006">Descrição</span><span class="zls_007">: O número do CNPJ “x” não é válido de acordo com os padrões de verificação nacional.</span></div>
+		<br/>
+		<div style="left:56.80px;top:341.60px" class="zls_003"><span class="zls_003">V24</span><span class="zls_004"> - </span><span class="zls_005">Arquivo xml não possui a tag "ans:CNPJ".</span></div>
+		<div style="left:56.80px;top:369.20px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O arquivo xml deve conter a tag “ans:CNPJ” para a validação dos números de CNPJ do arquivo.</span></div>
+		<br/>
+		<div style="left:56.80px;top:412.60px" class="zls_003"><span class="zls_003">V25</span><span class="zls_004"> - </span><span class="zls_005">O Código do CID (código) não é válido.</span></div>
+		<div style="left:56.80px;top:440.20px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O código do CID “x” não é válido, pois não se encontra na tabela de CID-10.</span></div>
+		<br/>
+		<div style="left:56.80px;top:469.80px" class="zls_003"><span class="zls_003">V26</span><span class="zls_004"> - </span><span class="zls_005">Arquivo xml não possui a tag "ans:codigoDiagnostico".</span></div>
+		<div style="left:56.80px;top:497.40px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O arquivo xml deve conter a tag “ans:codigoDiagnostico” para a validação dos códigos CID do arquivo.</span></div>
+		<br/>
+		<div style="left:56.80px;top:540.80px" class="zls_003"><span class="zls_003">V27</span><span class="zls_004"> - </span><span class="zls_005">O item da tabela (nome da tabela) (código) - (descrição) não é válido.</span></div>
+		<div style="left:56.80px;top:568.40px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O item “x” do tipo de tabela “nome da tabela” não é válido. Possíveis problemas: item não cadastrado no xTiss: entre em contato com o administrador do sistema para que o cadastro seja efetuado, ou, código do item informado no arquivo está incorreto.</span></div>
+		<br/>
+		<div style="left:56.80px;top:625.60px" class="zls_003"><span class="zls_003">V28</span><span class="zls_004"> - </span><span class="zls_005">O item da tabela (nome da tabela) não pode ser igual a "0".</span></div>
+		<div style="left:56.80px;top:653.20px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O item “x” do tipo de tabela “nome da tabela” não pode ser igual a “0”, deve ser um código válido.</span></div>
+		<br/>
+		<div style="left:56.80px;top:696.60px" class="zls_003"><span class="zls_003">V29</span><span class="zls_004"> - </span><span class="zls_005">Arquivo xml não possui a tag "ans:identificadorDespesa".</span></div>
+		<div style="left:56.80px;top:724.20px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O arquivo xml deve conter a tag “ans:identificadorDespesa” para a validação das tabelas do arquivo.</span></div>
+		<br/>
+		<div style="left:56.80px;top:753.80px" class="zls_003"><span class="zls_003">V30</span><span class="zls_004"> -  </span><span class="zls_005">Guia  de  número  (nº)  não  possui  a  quantidade  de  dígitos  menor  ou  igual  a  (quantidade configurada).</span></div>
+		<div style="left:56.80px;top:41.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: A guia de número “x” não possui a quantidade de dígitos menor ou igual à quantidade “y”, que foi configurada pela singular.</span></div>
+		<br/>
+		<div style="left:56.80px;top:85.20px" class="zls_003"><span class="zls_003">V30</span><span class="zls_004"> -  </span><span class="zls_005">Guia  de  número  (nº)  não  possui  a  quantidade  de  dígitos  maior  ou  igual  a  (quantidade configurada).</span></div>
+		<div style="left:56.80px;top:126.60px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: A guia de número “x” não possui a quantidade de dígitos maior ou igual à quantidade “y”, que foi configurada pela singular.</span></div>
+		<br/>
+		<div style="left:56.80px;top:170.00px" class="zls_003"><span class="zls_003">V30</span><span class="zls_004"> - </span><span class="zls_005">Guia de número (nº) não possui a quantidade de dígitos igual a (quantidade configurada).</span></div>
+		<div style="left:56.80px;top:197.60px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: A guia de número “x” não possui a quantidade de dígitos igual à quantidade “y”, que foi configurada pela singular.</span></div>
+		<br/>
+		<div style="left:56.80px;top:241.00px" class="zls_003"><span class="zls_003">V30</span><span class="zls_004"> -  </span><span class="zls_005">Guia de número (nº) não possui a quantidade de dígitos entre (quantidade configurada) e (quantidade configurada).</span></div>
+		<div style="left:56.80px;top:282.40px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: A guia de número “x” não possui a quantidade de dígitos entre à quantidade “y” e “z”, que foi configurada pela singular.</span></div>
+		<br/>
+		<div style="left:56.80px;top:325.80px" class="zls_003"><span class="zls_003">V30</span><span class="zls_004"> - </span><span class="zls_005">Guia de número (nº) não encontrada no IEPC.</span></div>
+		<div style="left:56.80px;top:353.40px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">:  Esta  validação  é  específica  da  Unicop,  e  refere-se  a  um  número  de  guia  “x”  não encontrado dentre as guias geradas pelo IEPC (sistema de intercâmbio).</span></div>
+		<br/>
+		<div style="left:56.80px;top:396.80px" class="zls_003"><span class="zls_003">V33</span><span class="zls_004"> - </span><span class="zls_005">A tag (nome da tag) do Prestador de número (código prestador) não possui a quantidade de dígitos menor ou igual a (quantidade configurada).</span></div>
+		<div style="left:56.80px;top:438.20px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: A tag “nome da tag” referente ao código na operadora “x” do prestador não possui a quantidade de dígitos menor ou igual à quantidade “y”, que foi configurada pela singular.</span></div>
+		<br/>
+		<div style="left:56.80px;top:481.60px" class="zls_003"><span class="zls_003">V33</span><span class="zls_004"> - </span><span class="zls_005">A tag (nome da tag) do Prestador de número (código prestador) não possui a quantidade de dígitos maior ou igual a (quantidade configurada).</span></div>
+		<div style="left:56.80px;top:523.00px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: A tag “nome da tag” referente ao código na operadora “x” do prestador não possui a quantidade de dígitos maior ou igual à quantidade “y”, que foi configurada pela singular.</span></div>
+		<br/>
+		<div style="left:56.80px;top:566.40px" class="zls_003"><span class="zls_003">V33</span><span class="zls_004"> - </span><span class="zls_005">A tag (nome da tag) do Prestador de número (código prestador) não possui a quantidade de dígitos igual a (quantidade configurada).</span></div>
+		<div style="left:56.80px;top:607.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: A tag “nome da tag” referente ao código na operadora “x” do prestador não possui a quantidade de dígitos igual à quantidade “y”, que foi configurada pela singular.</span></div>
+		<br/>
+		<div style="left:56.80px;top:651.20px" class="zls_003"><span class="zls_003">V33</span><span class="zls_004"> - </span><span class="zls_005">A tag (nome da tag) do Prestador de número (código prestador) não possui a quantidade de dígitos entre (quantidade configurada) e (quantidade configurada).</span></div>
+		<div style="left:56.80px;top:692.60px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: A tag “nome da tag” referente ao código na operadora “x” do prestador não possui a quantidade de dígitos entre à quantidade “y” e “z”, que foi configurada pela singular.</span></div>
+		<br/>
+		<div style="left:56.80px;top:749.80px" class="zls_003"><span class="zls_003">V34</span><span class="zls_004"> - </span><span class="zls_005">Arquivo xml não possui a tag "ans:codigoPrestadorNaOperadora".</span></div>
+		<div style="left:56.80px;top:41.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O arquivo xml deve conter a tag “ans:codigoPrestadorNaOperadora” para a validação de códigos de prestadores do arquivo.</span></div>
+		<br/>
+		<div style="left:56.80px;top:85.20px" class="zls_003"><span class="zls_003">V35</span><span class="zls_004"> - </span><span class="zls_005">A tag (nome da tag que possui o número da guia) deve ser obrigatória.</span></div>
+		<div style="left:56.80px;top:112.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: A tag “nome da tag que possui o número da guia/senha” deve ser obrigatória para este tipo de guia do arquivo xml.</span></div>
+		<br/>
+		<div style="left:56.80px;top:156.20px" class="zls_003"><span class="zls_003">V36</span><span class="zls_004"> - </span><span class="zls_005">Código do Beneficiário (nº carteira) não encontrado para guias do IEPC.</span></div>
+		<div style="left:56.80px;top:183.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: Esta validação  é específica  da Unicop,  e refere-se a um número  de carteira  “x” de beneficiário não encontrado dentre as guias geradas pelo IEPC (sistema de intercâmbio).</span></div>
+		<br/>
+		<div style="left:56.80px;top:227.20px" class="zls_003"><span class="zls_003">V38</span><span class="zls_004"> - </span><span class="zls_005">Código do Beneficiário não possui 17 dígitos.</span></div>
+		<div style="left:56.80px;top:254.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: De acordo com configuração feita pela singular, o código do beneficiário “x” não possui 17 dígitos.</span></div>
+		<br/>
+		<div style="left:56.80px;top:298.20px" class="zls_003"><span class="zls_003">V39/V41</span><span class="zls_004"> - </span><span class="zls_005">Arquivo xml não possui a tag "ans:numeroCarteira".</span></div>
+		<div style="left:56.80px;top:325.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O arquivo xml deve conter a tag “ans:numeroCarteira” para a validação de códigos de beneficiários do arquivo.</span></div>
+		<br/>
+		<div style="left:56.80px;top:369.20px" class="zls_003"><span class="zls_003">V40</span><span class="zls_004"> - </span><span class="zls_005">Dígito verificador do código do beneficiário incorreto.</span></div>
+		<div style="left:56.80px;top:396.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O código do beneficiário “x” não é válido, pois o dígito verificador  da carteira está incorreto.</span></div>
+		<br/>
+		<div style="left:56.80px;top:440.20px" class="zls_003"><span class="zls_003">V42</span><span class="zls_004"> - </span><span class="zls_005">Tipo de atendimento (código) - (nome) não permitido para esta operadora e prestador.</span></div>
+		<div style="left:56.80px;top:467.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: Se a singular configurou tipos de atendimentos que não serão permitidos em guias de seus prestadores, e se o arquivo xml possuir algum destes tipos de atendimentos, esta mensagem de erro será exibida.</span></div>
+		<br/>
+		<div style="left:56.80px;top:525.00px" class="zls_003"><span class="zls_003">V43</span><span class="zls_004"> -</span><span class="zls_005"> Arquivo xml não possui a tag "ans:tipoAtendimento".</span></div>
+		<div style="left:56.80px;top:552.60px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O arquivo xml deve conter a tag “ans:tipoAtendimento” para a validação de tipos de atendimentos não permitidos da singular.</span></div>
+		<br/>
+		<div style="left:56.80px;top:596.00px" class="zls_003"><span class="zls_003">V44</span><span class="zls_004"> - </span><span class="zls_005">Indicação Clínica obrigatória para o Tipo de Atendimento (código).</span></div>
+		<div style="left:56.80px;top:623.60px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: De acordo com configuração  feita pela singular, em guias SP/SADT é obrigatória a indicação clínica para o tipo de atendimento “x”.</span></div>
+		<br/>
+		<div style="left:56.80px;top:667.00px" class="zls_003"><span class="zls_003">V45</span><span class="zls_004"> - </span><span class="zls_005">Arquivo xml não possui a tag "ans:guiaSP_SADT".</span></div>
+		<div style="left:56.80px;top:694.60px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O arquivo xml deve conter a tag “ans:guiaSP_SADT” para a validação de indicação clínica do arquivo.</span></div>
+		<br/>
+		<div style="left:56.80px;top:765.60px" class="zls_003"><span class="zls_003">V46</span><span class="zls_004"> - </span><span class="zls_005">Tipo de Despesa '5 - Diárias' obrigatório para guia de internação.</span></div>
+		<div style="left:56.80px;top:41.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">:  De  acordo  com  configuração  feita  pela  singular,  em  guias  Resumo  de  Internação  é obrigatório ao menos um tipo de despesa igual a ‘5’ (diárias) para cada conta do arquivo xml.</span></div>
+		<br/>
+		<div style="left:56.80px;top:85.20px" class="zls_003"><span class="zls_003">V47/V50</span><span class="zls_004"> - </span><span class="zls_005">Arquivo xml não possui a tag "ans:outrasDespesas".</span></div>
+		<div style="left:56.80px;top:112.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">:  O  arquivo  xml  deve  conter  a  tag  “ans:outrasDespesas”  para  a  validação  de  tipo  de despesa igual a diárias em guias resumo de internação.</span></div>
+		<br/>
+		<div style="left:56.80px;top:156.20px" class="zls_003"><span class="zls_003">V48</span><span class="zls_004"> - </span><span class="zls_005">Arquivo xml não possui a tag "ans:guiaResumoInternacao".</span></div>
+		<div style="left:56.80px;top:183.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O arquivo xml deve conter a tag “ans:guiaResumoInternacao” para a validação de tipo de despesa igual a diárias em guias resumo de internação.</span></div>
+		<br/>
+		<div style="left:56.80px;top:227.20px" class="zls_003"><span class="zls_003">V49</span><span class="zls_004"> - </span><span class="zls_005">Código de Despesa não pode ser igual a "0" para guia de internação.</span></div>
+		<div style="left:56.80px;top:254.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: Para guias Resumo de Internação os códigos de despesa não podem ser iguais a ‘0’,</span></div>
+		<div style="left:56.80px;top:268.60px" class="zls_004"><span class="zls_004">deve ser um número válido.</span></div>
+		<br/>
+		<div style="left:56.80px;top:298.20px" class="zls_003"><span class="zls_003">V51</span><span class="zls_004"> - </span><span class="zls_005">Quantidade do procedimento (código) deve ser maior que '0'.</span></div>
+		<div style="left:56.80px;top:325.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: De acordo com configuração feita pela singular, a quantidade do procedimento “x” deve ser maior que ‘0’.</span></div>
+		<br/>
+		<div style="left:56.80px;top:369.20px" class="zls_003"><span class="zls_003">V51</span><span class="zls_004"> - </span><span class="zls_005">Quantidade do procedimento (código) possui caracteres inválidos.</span></div>
+		<div style="left:56.80px;top:396.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: De acordo  com  configuração  feita  pela singular,  a quantidade  do  procedimento  “x” possui caracteres inválidos, como letras e símbolos, por exemplo.</span></div>
+		<br/>
+		<div style="left:56.80px;top:440.20px" class="zls_003"><span class="zls_003">V51</span><span class="zls_004"> - </span><span class="zls_005">Valor do procedimento (código) deve ser maior que '0'.</span></div>
+		<div style="left:56.80px;top:467.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: De acordo com configuração feita pela singular, o valor do procedimento “x” deve ser maior que ‘0’.</span></div>
+		<br/>
+		<div style="left:56.80px;top:511.20px" class="zls_003"><span class="zls_003">V51</span><span class="zls_004"> - </span><span class="zls_005">Valor do procedimento (código) possui caracteres inválidos.</span></div>
+		<div style="left:56.80px;top:538.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: De acordo com configuração feita pela singular, o valor do procedimento “x” possui caracteres inválidos, como letras e símbolos, por exemplo.</span></div>
+		<br/>
+		<div style="left:56.80px;top:582.20px" class="zls_003"><span class="zls_003">V51</span><span class="zls_004"> - </span><span class="zls_005">Valor total do procedimento (código) deve ser maior que '0'.</span></div>
+		<div style="left:56.80px;top:609.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: De acordo com configuração feita pela singular, o valor total do procedimento “x” deve ser maior que ‘0’.</span></div>
+		<br/>
+		<div style="left:56.80px;top:653.20px" class="zls_003"><span class="zls_003">V51</span><span class="zls_004"> - </span><span class="zls_005">Valor total do procedimento (código) possui caracteres inválidos.</span></div>
+		<div style="left:56.80px;top:680.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">:  De  acordo  com  configuração  feita  pela  singular,  o  valor  total  do  procedimento  “x” possui caracteres inválidos, como letras e símbolos, por exemplo.</span></div>
+		<br/>
+		<div style="left:56.80px;top:765.60px" class="zls_003"><span class="zls_003">V51</span><span class="zls_004"> - </span><span class="zls_005">Quantidade da despesa (código) deve ser maior que '0'.</span></div>
+		<div style="left:56.80px;top:41.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: De acordo com configuração feita pela singular, a quantidade da despesa “x” deve ser maior que ‘0’.</span></div>
+		<br/>
+		<div style="left:56.80px;top:85.20px" class="zls_003"><span class="zls_003">V51</span><span class="zls_004"> - </span><span class="zls_005">Quantidade da despesa (código) possui caracteres inválidos.</span></div>
+		<div style="left:56.80px;top:112.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: De acordo com configuração feita pela singular, a quantidade da despesa “x” possui caracteres inválidos, como letras e símbolos, por exemplo.</span></div>
+		<br/>
+		<div style="left:56.80px;top:156.20px" class="zls_003"><span class="zls_003">V51</span><span class="zls_004"> - </span><span class="zls_005">Valor da despesa (código) deve ser maior que '0'.</span></div>
+		<div style="left:56.80px;top:183.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: De acordo com configuração feita pela singular, o valor da despesa “x” deve ser maior que ‘0’.</span></div>
+		<br/>
+		<div style="left:56.80px;top:227.20px" class="zls_003"><span class="zls_003">V51</span><span class="zls_004"> - </span><span class="zls_005">Valor da despesa (código) possui caracteres inválidos.</span></div>
+		<div style="left:56.80px;top:254.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">:  De  acordo  com  configuração  feita  pela  singular,  o  valor  da  despesa “x”  possuicaracteres inválidos, como letras e símbolos, por exemplo.</span></div>
+		<br/>
+		<div style="left:56.80px;top:298.20px" class="zls_003"><span class="zls_003">V51</span><span class="zls_004"> - </span><span class="zls_005">Valor total da despesa (código) deve ser maior que '0'.</span></div>
+		<div style="left:56.80px;top:325.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: De acordo com configuração feita pela singular, o valor total da despesa “x” deve semaior que ‘0’.</span></div>
+		<br/>
+		<div style="left:56.80px;top:369.20px" class="zls_003"><span class="zls_003">V51</span><span class="zls_004"> - </span><span class="zls_005">Valor total da despesa (código) possui caracteres inválidos.</span></div>
+		<div style="left:56.80px;top:396.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: De acordo com configuração feita pela singular, o valor total da despesa “x” possui caracteres inválidos, como letras e símbolos, por exemplo.</span></div>
+		<br/>
+		<div style="left:56.80px;top:440.20px" class="zls_003"><span class="zls_003">V52</span><span class="zls_004"> - </span><span class="zls_005">Arquivo xml não possui a tag "ans:procedimento".</span></div>
+		<div style="left:56.80px;top:467.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O arquivo xml deve conter a tag “ans:procedimento” para a validação de quantidades e valores de procedimentos e despesas do arquivo.</span></div>
+		<br/>
+		<div style="left:56.80px;top:511.20px" class="zls_003"><span class="zls_003">V53</span><span class="zls_004"> - </span><span class="zls_005">Arquivo xml não possui a tag "ans:despesa".</span></div>
+		<div style="left:56.80px;top:538.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">:  O  arquivo  xml  deve  conter  a  tag  “ans:despesa”  para  a  validação  de  quantidades  e valores de procedimentos e despesas do arquivo.</span></div>
+		<br/>
+		<div style="left:56.80px;top:582.20px" class="zls_003"><span class="zls_003">V54</span><span class="zls_004"> - </span><span class="zls_005">Tipo de guia (nome) não permitido para esta Operadora.</span></div>
+		<div style="left:56.80px;top:609.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: De acordo com configuração feita pela singular, o tipo de guia “nome da guia” não é permitido nos arquivos xml de seus prestadores.</span></div>
+		<br/>
+		<div style="left:56.80px;top:653.20px" class="zls_003"><span class="zls_003">V55</span><span class="zls_004"> - </span><span class="zls_005">Tipo de guia do pacote (código) deve ser do tipo (tipo de guia do arquivo).</span></div>
+		<div style="left:56.80px;top:680.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: De acordo com configuração feita pela singular, o tipo de guia do pacote “x” deve ser do mesmo tipo de guia do arquivo xml.</span></div>
+		<br/>
+		<div style="left:56.80px;top:765.60px" class="zls_003"><span class="zls_003">V56</span><span class="zls_004"> - </span><span class="zls_005">Nome do arquivo xml inválido: o número sequencial deve possuir 20 dígitos.</span></div>
+		<div style="left:56.80px;top:41.80px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O nome do arquivo xml deve ser composto por duas partes: número seqüencial de 20 dígitos (formatado  com ‘0’  à  esquerda)  e  o  hash  do  arquivo,  como  por  exemplo “00000000000000001054_0a92df9083c86df3d01e41a2657e250a.xml”.</span></div>
+		<br/>
+		<div style="left:56.80px;top:99.00px" class="zls_003"><span class="zls_003">V56</span><span class="zls_004"> - </span><span class="zls_005">Nome do arquivo xml inválido: o hash não confere com o hash original do arquivo.</span></div>
+		<div style="left:56.80px;top:126.60px" class="zls_003"><span class="zls_003">Descrição</span><span class="zls_004">: O nome do arquivo xml deve ser composto por duas partes: número seqüencial de 20 dígitos (formatado  com ‘0’  à  esquerda)  e  o  hash  do  arquivo,  como  por  exemplo “00000000000000001054_0a92df9083c86df3d01e41a2657e250a.xml”.</span></div>
+		<br/>
+		<div style="left:56.80px;top:183.80px" class="zls_003"><span class="zls_003">V57</span><span class="zls_004"> - </span><span class="zls_005">O arquivo xml deve conter as tags no padrão (tag).</span></div>
+		<div style="left:56.80px;top:211.40px" class="zls_003"><span class="zls_003">Descrição:  </span><span class="zls_004">A partir da versão 2.02.02 do esquema Tiss, as tags do arquivo xml devem seguir o padrão “ansTISS”, e não mais “ans:” (continua valendo este padrão para as versões anteriores).</span></div>
+		<br/>
+		<div style="left:56.80px;top:254.80px" class="zls_003"><span class="zls_003">V58</span><span class="zls_004"> - </span><span class="zls_005">Tipos de tabelas não cadastradas para esta singular.</span></div>
+		<div style="left:56.80px;top:282.40px" class="zls_003"><span class="zls_003">Descrição: </span><span class="zls_004">Singular não possui a configuração de “Tipos de Tabela” cadastrada no sistema.</span></div>
+		<br/>
+		<div style="left:56.80px;top:312.00px" class="zls_003"><span class="zls_003">V58</span><span class="zls_004"> - </span><span class="zls_005">O item (código do procedimento) do tipo de tabela (tipo) não é permitido para este arquivo.</span></div>
+		<div style="left:56.80px;top:339.60px" class="zls_003"><span class="zls_003">Descrição: </span><span class="zls_004">O código do procedimento é de um tipo de tabela não permitido pela singular, de acordo com o que foi configurado.</span></div>
+		<br/>
+		<div style="left:56.80px;top:383.00px" class="zls_003"><span class="zls_003">V59</span><span class="zls_004"> - </span><span class="zls_005">Guia de solicitação (n</span><span class="zls_004"> </span><span class="zls_005">º da guia) deve ser igual a senha de autorização (nº da senha).</span></div>
+		<div style="left:56.80px;top:410.60px" class="zls_003"><span class="zls_003">Descrição: </span><span class="zls_004">O número da guia de solicitação deve ser igual ao número da senha de autorização para arquivos do tipo Resumo de Internação.</span></div>
+	</div>
 </div>
 <br/><br/><br/><br/>
 
